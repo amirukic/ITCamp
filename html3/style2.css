@@ -1,0 +1,17 @@
+body{
+    margin: 0px;
+}
+.lista{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 80px;
+    padding-top: 20px;
+
+}
+li{
+    display: inline;
+    padding: 40px;
+    text-decoration: underline;
+    font-size: 1.2;
+}

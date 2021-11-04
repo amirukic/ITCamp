@@ -1,0 +1,63 @@
+.prvi{
+    margin-left: 5%;
+    display: inline-block;
+    width: 40%;
+}
+h5{
+    color: blueviolet;
+    background-color: skyblue;
+    width: 120px;
+    padding: 4px;
+    border-radius: 15px;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+}
+h2{
+    
+    font-size: 32px;
+    color: rgb(54, 54, 54);
+}
+p{
+    color: gray;
+    word-spacing: 4px;
+}
+a{
+    padding-right: 55%;
+    word-spacing: 4px;
+    text-decoration: none;
+}
+
+.drugi{
+    margin-left: 120px;
+    display: inline-block;
+    width: 40%;
+}
+.treci{
+    font-size: 20px;
+    display: inline-block;
+    color: rgb(119, 119, 119);
+    width: 100px;
+    height: 50px;
+    background-color: rgb(177, 177, 177); 
+    margin: 0px;
+    padding-top: 38px;
+    padding-bottom: 12px;
+    border-radius: 50%;
+}
+i{
+    word-spacing: 10px;
+    color: gray ;
+}
+.komentar{
+    padding-left: 40px;
+}
+.tekst{
+    display: inline-block;
+    
+}
+h4{
+    margin: 0;
+}
+h6{
+    margin: 0;
+}

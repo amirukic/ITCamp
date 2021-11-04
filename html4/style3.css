@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.main{
+    position: relative;
+    margin-top: 5%;
+    left: 18%;
+}
+.glavni{
+    border-bottom: 2px solid gray;
+    position: relative;
+    width: 60vw;
+    height: 170px;
+}
+.slika{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(169, 221, 253);
+    border-radius: 50%;
+    top: 35px;
+    left: 20px;
+    font-size: 50px;
+    color: blue;
+}
+.tekst{
+    position: absolute;
+    bottom: 20px;
+    left: 150px;
+}
+a{    
+    text-decoration: none;
+}
+.ikon1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.drugi{
+    position: relative;
+    width: 60vw;
+    height: 170px;
+    border-bottom: 2px solid gray;
+}
+.tekst2{
+    position: absolute;
+    left: 20px;
+}
+.slika2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(169, 221, 253);
+    border-radius: 50%;
+    top: 35px;
+    right: 20px;
+    color: blue;
+    font-size: 50px;
+}
+.ikon2{
+    position: absolute;
+    top: 25px;
+    right: 27px;
+}
+.treci{
+    border-bottom: 2px solid gray;
+    position: relative;
+    width: 60vw;
+    height: 170px;
+}
+.treci .slika{
+    top: 35px;
+}
+.ikon3{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+button{
+    position: relative;
+    left: 27%;
+    top: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(61, 61, 255);
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1em;
+}
+p{
+    color: rgb(112, 112, 112);
+}
