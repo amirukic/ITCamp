@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.glavni{
+    background-color: grey;
+    width: 100vw;
+    height: 50px;
+}
+.navbar{ 
+    display: flex;
+}
+.item{
+    margin-left: 20px;
+    margin-top: 10px;
+    list-style: none;
+    font-size: 1.3em;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width: 600px) {
+    .navbar{
+        display: block;
+        height: 200px;
+        background-color: gray;
+    }
+}

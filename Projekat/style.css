@@ -1,0 +1,192 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Palatino Linotype', serif !important;
+}
+.main{
+    display: flex;
+    z-index: -2;
+    flex-direction: column;
+    
+}
+#hmlogo{
+    position: absolute;
+    width: 36%;
+    height: 40%; 
+    left: 32%; 
+    top: 20px;
+    z-index: 2;
+}
+.prvi{
+    margin: 0 65px 0 65px;
+    display: flex;
+    z-index: -1;
+}
+#patika{
+    width: 90%;
+    height: 500px; 
+    margin-top: 100px; 
+    position: relative;
+    text-align: center;
+}
+#jakna{
+    width: 90%;
+    height: 500px;
+    margin-top: 100px;
+}
+#collection{
+    position: absolute;
+    top: 180px;
+    left: 80px;
+}
+.drugi{
+    margin: 0 0 0 65px;
+    display: flex;
+    z-index: -2;
+    position: relative;
+    gap: 250px;
+}
+#rajf{
+    width: 350px;
+    height: 340px;
+    margin-top: 150px;
+}
+#sredina{
+    position: absolute; 
+    top: 30%; 
+    left: 25%; 
+    height: 420px;
+    width: 380px;
+}
+#fashion{
+    height: 900px;
+    width: 50%;
+    background-color: rgb(170, 130, 29);
+    text-align: end;
+    color: white;
+    margin-top: -100px;
+    z-index: -1;
+    align-self: flex-end;
+}
+.fashionbutton{
+    background-color: rgb(82, 114, 82);
+    margin-right: 70px; 
+    border: none;
+    width: 150px;
+    height: 40px;
+    color: white;
+    padding: 10px 30px; 
+}
+
+.treci{
+    margin: 0 65px 0 65px;
+    display: flex;
+    z-index: -1;
+    position: relative;
+    flex-wrap: wrap;
+}
+.tekst{
+    margin-top: 40px;
+    width: 53%;
+}
+#sandale{
+    width: 380px;
+    height: 390px;
+    margin-top: 70px;
+}
+#zene{
+    margin: -80px 0 0 0;
+    width: 290px;
+    height: 270px;
+    position: absolute;
+    right: 0;
+}
+#kosulja{
+    margin-top: -50px;
+    width: 542px;
+    height: 500px; 
+    z-index: 0;
+}
+#denim{
+    width: 480px;
+    height: 370px;
+    background-color: rgb(170, 130, 29);
+    color: white;
+    margin: 140px 0 0 110px;
+    text-align: end;
+}
+.cetvrti{
+    margin: 0 0 0 0;
+    display: flex;
+    z-index: -3;
+    position: relative;
+}
+#redtext{
+    width: 570px;
+    height: 500px;
+    background-color: rgb(255, 35, 35);
+    color: white;
+    padding-left: 65px;
+    padding-top: 25%;
+    margin-top: -200px;
+}
+#naocare{
+    height: 370px;
+    width: 540px; 
+    margin: 80px 0 0 30px;
+}
+.peti{
+    margin: 0 65px;
+    display: flex;
+    z-index: -2;
+    position: relative;
+    flex-wrap: wrap;
+}
+#okertext{
+    width: 400px;
+    height: 250px;
+    background-color: rgb(170, 130, 29);
+    padding-left: 20px;
+    padding-top: 50px;
+    color: white;
+    margin-top: -50px;
+}
+#parpatika{
+    height: 550px;
+    width: 560px;
+    margin: 50px 0 0 auto;
+}
+#kais{
+    height: 230px;
+    width: 560px;
+    display: flex;
+    letter-spacing: 1.4px;
+    font-size: larger;
+    position: absolute;
+    bottom: 0px;
+}
+.sesti{
+    margin: 50px 0 0 65px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+#kaput{
+    width: 280px;
+    height: 380px;
+    margin-left: 230px;
+}
+#students{
+    width: 640px;
+    height: 550px;
+    background-color: rgb(255, 35, 35);
+    margin: 40px 0 0 auto;
+    text-align: end;
+    color: white;
+}
+#torba{
+    width: 300px;
+    height: 350px;
+    margin: -350px 0 0 0;
+    z-index: -3;
+}

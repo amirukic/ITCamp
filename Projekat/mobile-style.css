@@ -1,0 +1,17 @@
+@media screen and (max-width:600px) {
+    #parpatika{
+        width: 100%;
+    }
+    #kaput{
+        margin-left: 30%;
+    }
+    #naocare{
+        width: 85%;
+    }
+    #sandale{
+        margin-left: 5%;
+    }
+    #sredina{
+        left: 20%;
+    }
+}
