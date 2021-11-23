@@ -15,3 +15,45 @@
         left: 20%;
     }
 }
+@media screen and (max-width:426px) {
+    #hmlogo{
+        height: 30%;
+    }
+    .prvi{
+        margin: 120px 0 0 0;
+    }
+    #collection{
+        left: 5%;
+    }
+    #parpatika{
+        width: 100%;
+    }
+    #fashion{
+        height: fit-content;
+        padding-bottom: 10px;
+        font-size: 0.9em;
+    }
+    #sandale{
+        margin-top: 100px;
+    }
+    #denim{
+        margin: 0px 0 0 auto;
+    }
+    #zene{
+        margin-top: 250px;
+    }
+    #naocare{
+        margin: 900px 0 0 -200px;
+    }
+    #kais{
+        font-size: 0.8em;
+    }
+    #students{
+        height: fit-content;
+    }
+}
+@media screen and (max-width:320px) {
+    #naocare{
+        margin: 1000px 0 0 -200px;
+    }
+}
