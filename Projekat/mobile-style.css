@@ -20,18 +20,25 @@
         height: 30%;
     }
     .prvi{
-        margin: 120px 0 0 0;
+        margin: 120px 0 0 10%;
     }
     #collection{
-        left: 5%;
+        left: 15%;
     }
     #parpatika{
         width: 100%;
     }
+    .drugi{
+        width: 100%;
+    }
     #fashion{
         height: fit-content;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
         font-size: 0.9em;
+        
+    }
+    #sredina{
+        left: 15%;
     }
     #sandale{
         margin-top: 100px;
@@ -42,14 +49,27 @@
     #zene{
         margin-top: 250px;
     }
+    #redtext{
+        padding-left: 20px;
+        width: 80%;
+    }
     #naocare{
         margin: 900px 0 0 -200px;
     }
     #kais{
         font-size: 0.8em;
     }
+    .sesti{
+        width: 100%;
+    }
     #students{
         height: fit-content;
+        width: 80%;
+        padding-right: 4%;
+        padding-bottom: 20px;
+    }
+    #students p{
+        margin-right: 0;
     }
 }
 @media screen and (max-width:320px) {
