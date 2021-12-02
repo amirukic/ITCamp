@@ -1,0 +1,63 @@
+body{
+    padding: 0;
+}
+ul{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+li{
+    margin-right: 20px;
+    cursor: pointer;
+}
+#slika{
+    margin-top: -5px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+}
+.main{
+    display: grid;
+    margin-top: 30px;
+    place-content: center;
+}
+#google{
+    margin: auto;
+}
+.text{
+    display: flex;
+    width: 30rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 8px 20px;
+}
+#search{
+    border: none;
+    width: 23rem;
+}
+#search:focus{
+    outline: none;
+}
+.ikone i{
+    margin-left: 8px;   
+}
+.button{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+.button button{
+    margin-right: 30px;
+    height: 35px;
+    width: 140px;
+    border: 1px solid rgb(231, 231, 231);
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+p{
+    margin: auto;
+    margin-top: 40px;
+}
