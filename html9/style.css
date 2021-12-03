@@ -35,7 +35,7 @@ body{
 input[type=email] {
   padding: 6px;
   margin-top: 8px;
-  font-size: 17px;
+  font-size: 15px;
   border: none;
   width:120px;
   background-color: initial;
@@ -47,7 +47,7 @@ input[type=email] {
 input[type=password] {
   padding: 6px;
   margin-top: 8px;
-  font-size: 17px;
+  font-size: 15px;
   border: none;
   width:120px;
   background-color: initial;
@@ -132,4 +132,17 @@ input[type=text] {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(14, 14, 253);  
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0,7,128,1); 
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(29, 29, 167);
 }
