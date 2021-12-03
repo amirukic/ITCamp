@@ -1,0 +1,155 @@
+body{
+    padding: 0;
+    background-color: rgb(233, 233, 233);
+}
+.glavni{
+    display: grid;
+    place-content: center;
+}
+.main{
+    background-color: white;
+    width: 500px;
+    height: fit-content;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 1px 0px 20px 0px gray;
+}
+.new{
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+.new p{
+    color: grey;
+}
+.new h3{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.dokument{
+    padding: 20px;
+}
+#first{
+    padding: 5px;
+    width: 45%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+#last{
+    width: 45%;
+    height: 40px;
+    margin-left: 14px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 5px;
+}
+#number{
+    padding: 5px;
+    margin-top: 20px;
+    width: 95%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+#password{
+    padding: 5px;
+    margin-top: 20px;
+    width: 95%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.birth{
+    padding: 5px;
+    display: inline-block;
+}
+.dani{
+    display: inline-block;
+    margin-left: 17px;
+}
+.year{
+    display: inline-block;
+    margin-left: 20px;
+}
+#mesec{
+    height: 40px;
+    margin-top: 20px;
+    width: 130px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+#dani{
+    height: 40px;
+    margin-top: 20px;
+    width: 130px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+#godine{
+    height: 40px;
+    margin-top: 20px;
+    width: 130px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.radio{
+    display: flex;
+    margin-top: 20px;
+}
+.female{
+    width: 110px;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.male{
+    padding: 10px;
+    width: 110px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.sve{
+    padding: 10px;
+    width: 110px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.radio input{
+    float: right;
+}
+.text{
+    font-size: 0.8em;
+    color: gray;
+    font-weight: 100;
+}
+#button{
+    display: block;
+    margin: 30px  auto;
+    padding: 8px 60px;
+    background-color: rgb(9, 156, 9);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: 1px solid rgb(9, 156, 9);
+    border-radius: 10px;
+}
+.acc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#acc{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: rgb(18, 144, 194);
+}
+footer{
+    margin-top: 70px;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(236, 236, 236);
+}
