@@ -130,3 +130,15 @@ a{
     transition: 0.3s;
     background-color: rgb(54, 54, 54);
 }
+@media screen and (max-width:769px) {
+    .dokument{
+        display: flex;
+        flex-direction: column;
+    }
+    .prvi{
+        width: 80%;
+    }
+    .robot{
+        width: 120%;
+    }
+}
