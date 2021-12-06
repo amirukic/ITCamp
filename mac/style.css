@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Inconsolata', monospace;
+}
+.lista{
+    display: flex;
+    background-color: black;
+    padding: 20px 10px;
+    margin: 0;
+}
+li{
+    display: inline;
+    padding-left: 40px;
+    font-size: 1.2em;
+}
+li a{
+    
+    color: white;
+    text-decoration: none;
+}
+.slika{
+    position: relative;
+    text-align: center;
+    color: white;
+    height: fit-content;
+}
+.tekst{
+    position: absolute;
+    top: 2.5em;
+    right: 16px;
+    margin-top: 120px;
+    word-spacing: 1px;
+    font-size: 0.7em;
+}
+.kartice{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 40px;
+}
+.cart1{
+    width: 30%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#pro1{
+    width: 350px;
+    height: 320px;
+}
+.cart1 button{
+    width: 100px;
+    height: 40px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+.cart3{
+    width: 30%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.cart3 h3{
+    margin-top: 50px;
+}
+.cart3 p{
+    margin-bottom: 14px;
+}
+#pro3{
+    width: 300px;
+    height: 250px;
+    margin-top: 40px;
+}
+.cart3 button{
+    width: 100px;
+    height: 40px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width:376px) {
+    .kartice{
+        display: block;
+        width: 100%;
+    }
+    .cart1{
+        width: 100%;
+    }
+    .cart3{
+        width: 100%;
+    }
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    width: 100%;
+    background-color: rgb(206, 206, 206);
+}
