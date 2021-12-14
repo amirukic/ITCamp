@@ -62,6 +62,9 @@
     .sesti{
         width: 100%;
     }
+    #parpatika{
+        height: 370px;
+    }
     #students{
         height: fit-content;
         width: 80%;
