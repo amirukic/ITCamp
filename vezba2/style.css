@@ -1,0 +1,97 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+}
+#logo{
+    height: 50px;
+    width: 100px;
+    margin: 10px 0 0 10px;
+    cursor: pointer;
+}
+.main{
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 30%;
+    border: 1px solid gray;
+    padding: 20px;
+}
+.main h3{
+    font-size: 2em;
+}
+#email{
+    padding: 5px;
+    width: 95%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+#pass{
+    margin-top: 20px;
+    padding: 5px;
+    width: 95%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.signin{
+    width: 95%;
+    padding: 18px 0;
+    text-align: center;
+    border-radius: 40px;
+    background-color: rgb(27, 27, 255);
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.signin:hover{
+    background-color: rgb(4, 4, 252);
+}
+.or{
+    display: inline;
+    width: 100%;
+}
+.or p{
+    display: inline-block;
+}
+.linija{
+    width: 43%;
+    height: 1px;
+    background-color: black;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+.apple{
+    width: 95%;
+    padding: 18px 0;
+    text-align: center;
+    border-radius: 40px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.apple:hover{
+    border: 2px solid gray;
+}
+.join{
+    width: 100%;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(223, 223, 223);
+    text-align: center;
+    word-spacing: 2px ;
+}
