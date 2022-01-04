@@ -218,3 +218,19 @@
 //         console.log("Uneli ste pogresan broj");
 // }
 // console.log(day);
+
+broj = Number(prompt("Unesite broj brojeva"))
+parni = 0
+neparni = 0
+for (let i = 0; i < broj; i++) {
+    
+    b = Number(prompt("Unesite broj"))
+    if(b % 2 === 0){
+        parni += 1
+    }
+    else {
+        neparni += 1
+    }
+    
+}
+console.log(`Parnih ima ${parni}, Neparnih ima ${neparni}`);
