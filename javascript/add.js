@@ -219,18 +219,49 @@
 // }
 // console.log(day);
 
-broj = Number(prompt("Unesite broj brojeva"))
-parni = 0
-neparni = 0
-for (let i = 0; i < broj; i++) {
+// broj = Number(prompt("Unesite broj brojeva"))
+// parni = 0
+// neparni = 0
+// for (let i = 0; i < broj; i++) {
     
-    b = Number(prompt("Unesite broj"))
-    if(b % 2 === 0){
-        parni += 1
-    }
-    else {
-        neparni += 1
-    }
+//     b = Number(prompt("Unesite broj"))
+//     if(b % 2 === 0){
+//         parni += 1
+//     }
+//     else {
+//         neparni += 1
+//     }
     
-}
-console.log(`Parnih ima ${parni}, Neparnih ima ${neparni}`);
+// }
+// console.log(`Parnih ima ${parni}, Neparnih ima ${neparni}`);
+
+// let sum = 0
+// for (let i = 0; i < 1000; i++) {
+//     if(i % 3 === 0 || i % 5 === 0){
+//         sum += i
+//     }
+// }
+// console.log(sum);
+
+// for (let i = 0; i < 50; i++) {
+//     if(i % 3 === 0 && i % 5 === 0){
+//         console.log("fizzbuzz");
+//     }
+//     else if(i % 3 === 0){
+//         console.log("fizz");
+//     }   
+//     else if(i % 5 === 0){
+//         console.log("buzz");
+//     }
+//     else{
+//         console.log(i);
+//     }
+// }
+// let star
+// for (let i = 1; i <= 5; i++) {
+//     star = ''
+//     for (let j = 1; j <= i; j++) {
+//         star += '*'
+//     }
+//     console.log(star)
+// }
