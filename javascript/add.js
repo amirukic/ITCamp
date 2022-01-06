@@ -265,3 +265,48 @@
 //     }
 //     console.log(star)
 // }
+// let red = prompt(`Unesite broj redova`)
+// let zvezdice = ``
+// for (let i = 1; i <= red; i++) {
+//     console.log(zvezdice += `*`)
+// }
+
+// for (let i = 1; i <= 10; i++) {
+//     red = `` 
+//     for (let j = 1; j <= 10; j++) {
+//         red += `${i * j}\t`
+//     }
+//     console.log(red, "\n");
+// }
+// var iznad = 0
+// var ispod = 0
+
+// var pozbr = 0
+// var negbr = 0
+// for (let i = 0; i < 10; i++) {
+//     t = prompt(`Unesite brojeve`)
+//     if(i > 0){
+//         pozbr ++
+//         iznad += t
+//     }
+//     else{
+//         negbr ++
+//         ispod += t
+//     }
+    
+// }
+// console.log(`Srednja vrednost pozitivnog je ${iznad / pozbr}`);
+// console.log(`Srednja vrednost negativnog je ${ispod / negbr}`);
+
+let rec = "ratar"
+
+for (let i = 0; i < rec.length; i++) {
+    if(rec[i] !== rec[rec.length - 1 - i]){
+        console.log("Rec nije palindrom");
+        break;
+    }
+    if( i === rec.length - 1){
+        console.log("rec je palindrom");
+    } 
+    
+}
