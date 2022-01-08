@@ -298,15 +298,70 @@
 // console.log(`Srednja vrednost pozitivnog je ${iznad / pozbr}`);
 // console.log(`Srednja vrednost negativnog je ${ispod / negbr}`);
 
-let rec = "ratar"
+// let rec = "ratar"
 
-for (let i = 0; i < rec.length; i++) {
-    if(rec[i] !== rec[rec.length - 1 - i]){
-        console.log("Rec nije palindrom");
-        break;
-    }
-    if( i === rec.length - 1){
-        console.log("rec je palindrom");
-    } 
+// for (let i = 0; i < rec.length; i++) {
+//     if(rec[i] !== rec[rec.length - 1 - i]){
+//         console.log("Rec nije palindrom");
+//         break;
+//     }
+//     if( i === rec.length - 1){
+//         console.log("rec je palindrom");
+//     } 
     
+// var loz = prompt("Unesite lozinku: ")
+// var tacna = 'tajno'
+
+// while (loz !== tacna) {
+//     loz = prompt("Niste Uneli tacnu lozinku unesite opet");  
+// }
+
+//     console.log("Uneli ste tacnu lozinku");
+
+// let broj = 0
+// while (1) {
+//     broj = Number(prompt("Unesite broj: "))
+//     if(broj === 0){
+//         break
+//     }
+//     if(broj <= 20 && broj >= 10){
+//         alert("Bravo")
+//     }
+//     else{
+//         alert("Proamsio si")
+//     }
+// }
+
+let rez = 0
+
+while (1) {
+    operacija = Number(prompt("Unesite broj operacije (1.sabiranje, 2.oduzimanje, 3.mnozenje, 4.deljenje): "))
+    if(operacija === 1){
+        let prvi = Number(prompt("Unesite prvi broj"))
+        let drugi = Number(prompt("Unesite drugi broj"))
+        rez = prvi + drugi
+        console.log(rez);
+    }
+    if(operacija === 2){
+        let prvi = Number(prompt("Unesite prvi broj"))
+        let drugi = Number(prompt("Unesite drugi broj"))
+        rez = prvi - drugi
+        console.log(rez);
+    }
+    if(operacija === 3){
+        let prvi = Number(prompt("Unesite prvi broj"))
+        let drugi = Number(prompt("Unesite drugi broj"))
+        rez = prvi * drugi
+        console.log(rez);
+    }
+    if(operacija === 4){
+        let prvi = Number(prompt("Unesite prvi broj"))
+        let drugi = Number(prompt("Unesite drugi broj"))
+        rez = prvi / drugi
+        console.log(rez);
+    }
+    if(operacija >= 5 || operacija <= 0){
+        alert("Izlaz iz programa");
+    }
+    break
 }
