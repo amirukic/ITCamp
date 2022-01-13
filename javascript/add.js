@@ -332,36 +332,65 @@
 //     }
 // }
 
-let rez = 0
+// let rez = 0
 
-while (1) {
-    operacija = Number(prompt("Unesite broj operacije (1.sabiranje, 2.oduzimanje, 3.mnozenje, 4.deljenje): "))
-    if(operacija === 1){
-        let prvi = Number(prompt("Unesite prvi broj"))
-        let drugi = Number(prompt("Unesite drugi broj"))
-        rez = prvi + drugi
-        console.log(rez);
+// while (1) {
+//     operacija = Number(prompt("Unesite broj operacije (1.sabiranje, 2.oduzimanje, 3.mnozenje, 4.deljenje): "))
+//     if(operacija === 1){
+//         let prvi = Number(prompt("Unesite prvi broj"))
+//         let drugi = Number(prompt("Unesite drugi broj"))
+//         rez = prvi + drugi
+//         console.log(rez);
+//     }
+//     if(operacija === 2){
+//         let prvi = Number(prompt("Unesite prvi broj"))
+//         let drugi = Number(prompt("Unesite drugi broj"))
+//         rez = prvi - drugi
+//         console.log(rez);
+//     }
+//     if(operacija === 3){
+//         let prvi = Number(prompt("Unesite prvi broj"))
+//         let drugi = Number(prompt("Unesite drugi broj"))
+//         rez = prvi * drugi
+//         console.log(rez);
+//     }
+//     if(operacija === 4){
+//         let prvi = Number(prompt("Unesite prvi broj"))
+//         let drugi = Number(prompt("Unesite drugi broj"))
+//         rez = prvi / drugi
+//         console.log(rez);
+//     }
+//     if(operacija >= 5 || operacija <= 0){
+//         alert("Izlaz iz programa");
+//         break
+//     }
+    
+// }
+
+// let ucenici = Number(prompt("Broj ucenika: "))
+// let niz = []
+// for (let i = 0; i < ucenici; i++) {
+//     niz.push(Number(prompt("Unesite visinu ucenika")))
+    
+// }
+// console.log(Math.max(...niz));
+// console.log(Math.min(...niz));
+
+brojevi = [3,7,6,8,5,2,1,6,4,6,8,1,5,2]
+
+parni = []
+neparni = []
+i=0
+while ( i < brojevi.length )
+{
+    if( brojevi[i] % 2 == 0) {
+        parni.push(brojevi[i])  // Ako je broj paran dodaj ga u parne
+    } else {
+        neparni.push(brojevi[i]) // Ako je neparan dodaj ga u neparne
     }
-    if(operacija === 2){
-        let prvi = Number(prompt("Unesite prvi broj"))
-        let drugi = Number(prompt("Unesite drugi broj"))
-        rez = prvi - drugi
-        console.log(rez);
-    }
-    if(operacija === 3){
-        let prvi = Number(prompt("Unesite prvi broj"))
-        let drugi = Number(prompt("Unesite drugi broj"))
-        rez = prvi * drugi
-        console.log(rez);
-    }
-    if(operacija === 4){
-        let prvi = Number(prompt("Unesite prvi broj"))
-        let drugi = Number(prompt("Unesite drugi broj"))
-        rez = prvi / drugi
-        console.log(rez);
-    }
-    if(operacija >= 5 || operacija <= 0){
-        alert("Izlaz iz programa");
-    }
-    break
+    i = i + 1                   // i uvećaj za jedan da bi prešao na sledeći element niza
 }
+
+console.log("Parni: " + parni)
+console.log("Neparni: " + neparni);
+
