@@ -371,26 +371,91 @@
 // let niz = []
 // for (let i = 0; i < ucenici; i++) {
 //     niz.push(Number(prompt("Unesite visinu ucenika")))
-    
+
 // }
 // console.log(Math.max(...niz));
 // console.log(Math.min(...niz));
 
-brojevi = [3,7,6,8,5,2,1,6,4,6,8,1,5,2]
+// brojevi = [3,7,6,8,5,2,1,6,4,6,8,1,5,2]
 
-parni = []
-neparni = []
-i=0
-while ( i < brojevi.length )
-{
-    if( brojevi[i] % 2 == 0) {
-        parni.push(brojevi[i])  // Ako je broj paran dodaj ga u parne
-    } else {
-        neparni.push(brojevi[i]) // Ako je neparan dodaj ga u neparne
+// parni = []
+// neparni = []
+// i=0
+// while ( i < brojevi.length )
+// {
+//     if( brojevi[i] % 2 == 0) {
+//         parni.push(brojevi[i])  // Ako je broj paran dodaj ga u parne
+//     } else {
+//         neparni.push(brojevi[i]) // Ako je neparan dodaj ga u neparne
+//     }
+//     i = i + 1                   // i uvećaj za jedan da bi prešao na sledeći element niza
+// }
+
+// console.log("Parni: " + parni)
+// console.log("Neparni: " + neparni);
+
+// ucenici = [
+//     { ime: "Adem Ugljanin", visina: 192 },
+//     { ime: "Amir Ukic", visina: 180 },
+//     { ime: "Tarik Ibrahimovic", visina: 185 }
+//  ]
+//  i = 0
+//  visina = 0
+//  while ( i < ucenici.length ) {
+//    ucenik = ucenici[i]
+//    if ( ucenik.visina > visina ) {
+//      najveci = ucenik.ime
+//      visina = ucenik.visina
+//    }
+//    i = i + 1
+//  }
+//  console.log("Ucenik " + najveci + " je najveci");
+
+
+// let niz = []
+// niz.length = 10
+// let suma = 0
+
+// for (let i = 0; i < niz.length; i++) {
+//     niz[i] = i + 1
+//     if(niz[i] % 2 == 0){
+//         suma += niz[i]
+//     }    
+// }
+// console.log(suma);
+
+
+// let niz = []
+// for (let i = 0; i < 10; i++) {
+//     niz[i] = i + 1
+//     niz[i] *= 3
+//     console.log(niz[i]);
+// }
+
+// let niz1 = [5, 6, 7, 8, 9, 10]
+// let niz2 = []
+// console.log(niz1);
+// console.log(niz2);
+// for (let i = 0; i < 6; i++) {
+//     let a = niz1.pop(i)
+//     niz2.unshift(a)
+    
+// }
+// console.log(niz1);
+// console.log(niz2);
+
+var a = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12]
+]
+let x = a.length
+let star 
+
+for (let i = 0; i < x; i++) {
+    star = ''
+    for (let j = 0; j < 4; j++) {
+    star += a[i][j] + "\t"
     }
-    i = i + 1                   // i uvećaj za jedan da bi prešao na sledeći element niza
+    console.log(star);
 }
-
-console.log("Parni: " + parni)
-console.log("Neparni: " + neparni);
-
