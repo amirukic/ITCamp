@@ -444,18 +444,57 @@
 // console.log(niz1);
 // console.log(niz2);
 
-var a = [
-    [1, 2, 3, 4],
-    [5, 6, 7, 8],
-    [9, 10, 11, 12]
-]
-let x = a.length
-let star 
+// var a = [
+//     [1, 2, 3, 4],
+//     [5, 6, 7, 8],
+//     [9, 10, 11, 12]
+// ]
+// let x = a.length
+// let star 
 
-for (let i = 0; i < x; i++) {
-    star = ''
-    for (let j = 0; j < 4; j++) {
-    star += a[i][j] + "\t"
-    }
-    console.log(star);
-}
+// for (let i = 0; i < x; i++) {
+//     star = ''
+//     for (let j = 0; j < 4; j++) {
+//     star += a[i][j] + "\t"
+//     }
+//     console.log(star);
+// }
+
+
+// var a = [
+//     [1, 2, 1, 24],
+//     [8, 11, 9, 4],
+//     [7, 0, 7, 27],
+//     [7, 4, 28, 14],
+// ]
+// let x = a.length
+// let star 
+
+// for (let i = 0; i < x; i++) {
+//     star = ''
+//     for (let j = 0; j < 4; j++) {
+//         if (i === j) {
+//             a[i][j] = 0
+//         }
+//         star += a[i][j] + "\t"
+//     }
+//     console.log(star);
+// }
+
+
+// console.log(" ");
+// console.log(" ");
+
+
+
+// for (let i = 0; i < x; i++) {
+//     star = ''
+//     for (let j = 0; j < 4; j++) {
+//         if (i + j === x - 1) {
+//             a[i][j] = 0
+//         }  
+//         star += `${a[i][j]} \t`
+//     }
+//     console.log(star)
+// }
+    
