@@ -498,3 +498,27 @@
 //     console.log(star)
 // }
     
+
+
+
+// let differnce = (niz1, niz2) => {
+//     for (let i = 0; i < niz1.length; i++) {
+//         if(!niz2.includes(niz1[i])){
+//             niz3.push(niz1[i])
+//         }
+        
+//     }
+//     for (let i = 0; i < niz2.length; i++) {
+//         if(!niz1.includes(niz2[i])){
+//             niz3.push(niz2[i])
+//         }
+        
+//     }
+//     return niz3
+// }
+
+// var niz1 = [1, 2, 3]
+// var niz2 = [100, 2, 1, 10]
+// var niz3 = []
+// console.log(differnce(niz1,niz2).sort());
+
