@@ -522,3 +522,11 @@
 // var niz3 = []
 // console.log(differnce(niz1,niz2).sort());
 
+var niz1 = [1, 2, 3]
+var niz2 = [2, 30, 1]
+res = [... new Set([...niz1, ...niz2])]
+
+console.log(res);
+
+
+
