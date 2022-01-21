@@ -522,11 +522,18 @@
 // var niz3 = []
 // console.log(differnce(niz1,niz2).sort());
 
-var niz1 = [1, 2, 3]
-var niz2 = [2, 30, 1]
-res = [... new Set([...niz1, ...niz2])]
+// var niz1 = [1, 2, 3]
+// var niz2 = [2, 30, 1]
+// res = [... new Set([...niz1, ...niz2])]
 
-console.log(res);
+// console.log(res);
 
+
+
+function arrayMove(niz, stari, novi) {
+    niz.splice(novi, 0, niz.splice(stari, 1)[0])
+    return niz
+  }
+console.log(arrayMove([10, 20, 30, 40, 50], 0, 2))
 
 
