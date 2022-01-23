@@ -530,10 +530,33 @@
 
 
 
-function arrayMove(niz, stari, novi) {
-    niz.splice(novi, 0, niz.splice(stari, 1)[0])
-    return niz
-  }
-console.log(arrayMove([10, 20, 30, 40, 50], 0, 2))
+// function arrayMove(niz, stari, novi) {
+//     niz.splice(novi, 0, niz.splice(stari, 1)[0])
+//     return niz
+//   }
+// console.log(arrayMove([10, 20, 30, 40, 50], 0, 2))
+
+
+
+
+
+let arr = [58, "", "abcd", true, null, false, 0]
+let niz = []
+
+for (let i = 0; i < arr.length; i++) {
+        if(Boolean(arr[i])){
+                niz.push(arr[i])
+            }
+            else if(Number(arr[i])){
+                    niz.push(arr[i])
+                }
+            
+            }
+            console.log(niz);
+
+            
+            
+            
+
 
 
