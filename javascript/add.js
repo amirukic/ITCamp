@@ -540,23 +540,28 @@
 
 
 
-let arr = [58, "", "abcd", true, null, false, 0]
-let niz = []
+// let arr = [58, "", "abcd", true, null, false, 0]
+// let niz = []
 
-for (let i = 0; i < arr.length; i++) {
-        if(Boolean(arr[i])){
-                niz.push(arr[i])
-            }
-            else if(Number(arr[i])){
-                    niz.push(arr[i])
-                }
+// for (let i = 0; i < arr.length; i++) {
+//         if(Boolean(arr[i])){
+//                 niz.push(arr[i])
+//             }
+//             else if(Number(arr[i])){
+//                     niz.push(arr[i])
+//                 }
             
-            }
-            console.log(niz);
+//             }
+//             console.log(niz);
 
             
             
             
+let arr = [`b`, 6, `a`, `q`, 7, 2]
+            
+console.log(arr.sort());
+
+
 
 
 
