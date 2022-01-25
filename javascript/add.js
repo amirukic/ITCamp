@@ -557,11 +557,124 @@
             
             
             
-let arr = [`b`, 6, `a`, `q`, 7, 2]
+// let arr = [`b`, 6, `a`, `q`, 7, 2]
             
-console.log(arr.sort());
+// console.log(arr.sort());
+
+
+
+                                            /////////////////////////////////// URADITI KUCI
+// let arr = [
+//     ["a", 1, true],
+//     ["b", 2, false]
+// ]
+// for (let i = 0; i < arr.length; i++) {
+    
+    // for (let j = 0; j < 3; j++) {
+    //     console.log(j);
+    //     // if(typeof j === "string"){
+    //     //     niz[0].push(arr[j])
+    //     // }
+    //     // else if(typeof j === "number"){
+    //     //     niz[1].push(arr[j])
+    //     // }   
+    //     // else if(typeof j === "boolean"){
+    //     //     niz[2].push(arr[j])
+    //     // }
+    // }
+// }
+// console.log(niz);
+            
+            
+            
+            
+                                            /////////////////////////////////// URADITI KUCI
+
+// function capitaliseString() {
+//     let fox = `the quick brown fox`
+//     let a = fox.split(" ")
+//     for (let i = 0; i < a.length; i++) {
+//         for (let j = 0; j < a[i].length; j++) {
+//             let b = a[i][0].toUpperCase()
+            
+//         }
+        
+//     }
+//     console.log(a.join(" "));
+// }
+// capitaliseString()
+
+
+
+
+// function ime(name) {
+//     console.log("vase ime je", name);
+// }
+// unos = prompt("Unesite vase ime")
+// ime(unos)
+
+
+
+
+// function bmi(weight,height) {
+//     let bmi = 0
+//     weight = prompt("Unesite tezinu")
+//     height = prompt("Unesite visinu")
+//     bmi = weight/(height * height)
+//     if(bmi < 18.5)
+//     return "Underweight";
+//     else if(bmi > 18.5 && bmi <= 25.0)
+//     return "Normal";
+//     else if(bmi > 25.0 && bmi <= 30.0)
+//     return "Overweight";
+//     else if(bmi > 30.0)
+//     return "Obese";
+    
+// }
+// console.log(bmi());
 
 
 
 
 
+
+// function boolToWord(bool) {
+//     if(bool)
+//     return "aha";
+//     else
+//     return "nije brt"
+    
+// }
+// console.log(boolToWord(false));
+
+
+
+
+// function makeUpperCase(str) {
+//     return str.toUpperCase()
+// }
+// console.log(makeUpperCase("asydufbuiabsduibaid"));
+
+
+
+
+// function even_or_odd(number) {
+//     if(number%2 === 0)
+//     return "even"
+//     else
+//     return "odd"
+// }
+// console.log(even_or_odd(4));
+
+
+
+
+function between(a, b) {
+    let niz = []
+    for (let i = a; i <= b; i++) {
+        niz.push(i)
+        
+    }
+    return niz
+}
+console.log(between(4,10));
