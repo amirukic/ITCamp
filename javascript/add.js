@@ -669,12 +669,89 @@
 
 
 
-function between(a, b) {
-    let niz = []
-    for (let i = a; i <= b; i++) {
-        niz.push(i)
+// function between(a, b) {
+//     let niz = []
+//     for (let i = a; i <= b; i++) {
+//         niz.push(i)
+        
+//     }
+//     return niz
+// }
+// console.log(between(4,10));
+
+
+
+// function twiceAsOld(dadYearsOld,sonYearsOld) {
+//     let a = dadYearsOld - sonYearsOld
+//     let b = a * 2
+//     let c = dadYearsOld - b
+//     return c;
+// }
+// console.log(twiceAsOld(40,15));
+
+
+
+
+// function digitize(n) {
+//     n = n.toString()
+//     arr = []
+//     for (let i = n.length-1; i >= 0; i--) {
+//         arr.push(parseInt(n(i)))
+//     }
+//     return arr;
+// }
+// console.log(digitize());
+
+
+
+
+
+// function mymove(niz){
+//     min1 = niz[0]
+//     min2 = niz[0]
+//     for(el of niz){
+//         if(min1 > el){
+//             min1 = el
+//         }
+//         else if(min2 > el && min1 < el){
+//             min2 = el
+//         }
+//     }
+//     console.log("Najmanji je: ", min1);
+//     console.log("Do najmanjeg je: ", min2);
+// }
+// mymove([3, 6, 9, 1, 4])
+
+
+
+
+
+// let niz = [3, 0, 23, 54, 0, 123, 0, 32, 63]
+
+// function mymove(niz) {
+//     for (let i = 0; i < niz.length; i++) {
+//         if(niz[i] === 0){
+//             niz.splice(i,1)
+//             niz.push(0)
+//         }
+        
+//     }
+//     return niz
+// }
+// console.log(mymove(niz));
+
+
+
+
+
+let data = [3, 24, 54, 123, 32, 63]
+function mymove(niz){
+    suma = 0
+    
+    for (let i = 0; i < niz.length; i++) {
+        suma += niz[i]
         
     }
-    return niz
-}
-console.log(between(4,10));
+    return suma/niz.length
+}    
+console.log(mymove(data));
