@@ -744,14 +744,71 @@
 
 
 
-let data = [3, 24, 54, 123, 32, 63]
-function mymove(niz){
-    suma = 0
+// let data = [3, 24, 54, 123, 32, 63]
+// function mymove(niz){
+//     suma = 0
     
-    for (let i = 0; i < niz.length; i++) {
-        suma += niz[i]
+//     for (let i = 0; i < niz.length; i++) {
+//         suma += niz[i]
         
+//     }
+//     return suma/niz.length
+// }    
+// console.log(mymove(data));
+
+
+
+
+
+
+data = [2, 5, 34, 65, 52, 98, 23, 66]
+
+// parni = data.filter((el) => {
+//     return el % 2 === 0
+// })
+// console.log(parni);
+
+
+// neparni = data.map((el) => {
+//     if(el % 2 === 1){
+//         return 0
+//     }
+//     else
+//     return el
+// })
+// console.log(neparni);
+
+
+// jed = data.every((el) => {
+//     return el > 11;
+// })
+// console.log(jed);
+
+
+
+// data = data.some((el) => {
+//     return el>90;
+// })
+// console.log(data);
+
+
+
+
+data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]
+
+
+niz = []
+
+sum = 0
+broj = 0
+for (let i = 0; i < data.length; i++) {
+    if(data[i] > 0){
+        broj ++
     }
-    return suma/niz.length
-}    
-console.log(mymove(data));
+    else{
+        sum += data[i]
+    }
+}
+niz.push(broj)
+niz.push(sum)
+console.log(niz);
