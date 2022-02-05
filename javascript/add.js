@@ -19,7 +19,7 @@
 // let c = window.prompt("Unesite dan rodjenja: ")
 //     console.log("Dana", 31 - c)
 
-// DOMACI 1 
+// DOMACI 1
 
 // var a = window.prompt("Unesite broj ")
 
@@ -50,7 +50,7 @@
 //     if (a > c) {
 //         console.log("Prvi broj je najveci")
 //     }
-    
+
 // let a = prompt("Unesite broj 1 od 12")
 
 // switch(a){
@@ -91,7 +91,7 @@
 //     console.log("Decembar")
 //     break;
 //     default:
-//         console.log("Uneli ste pogresan broj")       
+//         console.log("Uneli ste pogresan broj")
 //     break;
 // }
 
@@ -114,9 +114,9 @@
 // // let max = niz[0]
 // // for (let i = 0; i < niz.length; i++) {
 // //     if (max < niz[i]){
-        
+
 // //     }
-    
+
 // // }
 
 // console.log(Math.max(...niz));
@@ -127,7 +127,7 @@
 // for (let i = 0; i < niz.length; i++){
 //     zbir += niz[i]
 // }
-// DOMACI 
+// DOMACI
 // console.log(`Srednja vrednost je ${zbir / niz.length}`);
 
 // for (let i = 0; i <= 10; i++) {
@@ -137,7 +137,7 @@
 //     else{
 //         console.log(i);
 //     }
-    
+
 // }
 
 // for (let i = 0; i < 3; i++) {
@@ -145,7 +145,7 @@
 // }
 // for (let i = 0; i < 3; i++) {
 //     console.log("je super");
-    
+
 // }
 
 // broj = prompt("Unesite dan u godini")
@@ -223,7 +223,7 @@
 // parni = 0
 // neparni = 0
 // for (let i = 0; i < broj; i++) {
-    
+
 //     b = Number(prompt("Unesite broj"))
 //     if(b % 2 === 0){
 //         parni += 1
@@ -231,7 +231,7 @@
 //     else {
 //         neparni += 1
 //     }
-    
+
 // }
 // console.log(`Parnih ima ${parni}, Neparnih ima ${neparni}`);
 
@@ -249,7 +249,7 @@
 //     }
 //     else if(i % 3 === 0){
 //         console.log("fizz");
-//     }   
+//     }
 //     else if(i % 5 === 0){
 //         console.log("buzz");
 //     }
@@ -272,7 +272,7 @@
 // }
 
 // for (let i = 1; i <= 10; i++) {
-//     red = `` 
+//     red = ``
 //     for (let j = 1; j <= 10; j++) {
 //         red += `${i * j}\t`
 //     }
@@ -293,7 +293,7 @@
 //         negbr ++
 //         ispod += t
 //     }
-    
+
 // }
 // console.log(`Srednja vrednost pozitivnog je ${iznad / pozbr}`);
 // console.log(`Srednja vrednost negativnog je ${ispod / negbr}`);
@@ -307,13 +307,13 @@
 //     }
 //     if( i === rec.length - 1){
 //         console.log("rec je palindrom");
-//     } 
-    
+//     }
+
 // var loz = prompt("Unesite lozinku: ")
 // var tacna = 'tajno'
 
 // while (loz !== tacna) {
-//     loz = prompt("Niste Uneli tacnu lozinku unesite opet");  
+//     loz = prompt("Niste Uneli tacnu lozinku unesite opet");
 // }
 
 //     console.log("Uneli ste tacnu lozinku");
@@ -364,7 +364,7 @@
 //         alert("Izlaz iz programa");
 //         break
 //     }
-    
+
 // }
 
 // let ucenici = Number(prompt("Broj ucenika: "))
@@ -411,7 +411,6 @@
 //  }
 //  console.log("Ucenik " + najveci + " je najveci");
 
-
 // let niz = []
 // niz.length = 10
 // let suma = 0
@@ -420,10 +419,9 @@
 //     niz[i] = i + 1
 //     if(niz[i] % 2 == 0){
 //         suma += niz[i]
-//     }    
+//     }
 // }
 // console.log(suma);
-
 
 // let niz = []
 // for (let i = 0; i < 10; i++) {
@@ -439,7 +437,7 @@
 // for (let i = 0; i < 6; i++) {
 //     let a = niz1.pop(i)
 //     niz2.unshift(a)
-    
+
 // }
 // console.log(niz1);
 // console.log(niz2);
@@ -450,7 +448,7 @@
 //     [9, 10, 11, 12]
 // ]
 // let x = a.length
-// let star 
+// let star
 
 // for (let i = 0; i < x; i++) {
 //     star = ''
@@ -460,7 +458,6 @@
 //     console.log(star);
 // }
 
-
 // var a = [
 //     [1, 2, 1, 24],
 //     [8, 11, 9, 4],
@@ -468,7 +465,7 @@
 //     [7, 4, 28, 14],
 // ]
 // let x = a.length
-// let star 
+// let star
 
 // for (let i = 0; i < x; i++) {
 //     star = ''
@@ -481,38 +478,32 @@
 //     console.log(star);
 // }
 
-
 // console.log(" ");
 // console.log(" ");
-
-
 
 // for (let i = 0; i < x; i++) {
 //     star = ''
 //     for (let j = 0; j < 4; j++) {
 //         if (i + j === x - 1) {
 //             a[i][j] = 0
-//         }  
+//         }
 //         star += `${a[i][j]} \t`
 //     }
 //     console.log(star)
 // }
-    
-
-
 
 // let differnce = (niz1, niz2) => {
 //     for (let i = 0; i < niz1.length; i++) {
 //         if(!niz2.includes(niz1[i])){
 //             niz3.push(niz1[i])
 //         }
-        
+
 //     }
 //     for (let i = 0; i < niz2.length; i++) {
 //         if(!niz1.includes(niz2[i])){
 //             niz3.push(niz2[i])
 //         }
-        
+
 //     }
 //     return niz3
 // }
@@ -528,17 +519,11 @@
 
 // console.log(res);
 
-
-
 // function arrayMove(niz, stari, novi) {
 //     niz.splice(novi, 0, niz.splice(stari, 1)[0])
 //     return niz
 //   }
 // console.log(arrayMove([10, 20, 30, 40, 50], 0, 2))
-
-
-
-
 
 // let arr = [58, "", "abcd", true, null, false, 0]
 // let niz = []
@@ -550,34 +535,19 @@
 //             else if(Number(arr[i])){
 //                     niz.push(arr[i])
 //                 }
-            
+
 //             }
 //             console.log(niz);
 
-            
-            
-            
 // let arr = [`b`, 6, `a`, `q`, 7, 2]
-            
+
 // console.log(arr.sort());
-
-
-
-
-            
-
-
-
-
 
 // function ime(name) {
 //     console.log("vase ime je", name);
 // }
 // unos = prompt("Unesite vase ime")
 // ime(unos)
-
-
-
 
 // function bmi(weight,height) {
 //     let bmi = 0
@@ -592,34 +562,23 @@
 //     return "Overweight";
 //     else if(bmi > 30.0)
 //     return "Obese";
-    
+
 // }
 // console.log(bmi());
-
-
-
-
-
 
 // function boolToWord(bool) {
 //     if(bool)
 //     return "aha";
 //     else
 //     return "nije brt"
-    
+
 // }
 // console.log(boolToWord(false));
-
-
-
 
 // function makeUpperCase(str) {
 //     return str.toUpperCase()
 // }
 // console.log(makeUpperCase("asydufbuiabsduibaid"));
-
-
-
 
 // function even_or_odd(number) {
 //     if(number%2 === 0)
@@ -629,20 +588,15 @@
 // }
 // console.log(even_or_odd(4));
 
-
-
-
 // function between(a, b) {
 //     let niz = []
 //     for (let i = a; i <= b; i++) {
 //         niz.push(i)
-        
+
 //     }
 //     return niz
 // }
 // console.log(between(4,10));
-
-
 
 // function twiceAsOld(dadYearsOld,sonYearsOld) {
 //     let a = dadYearsOld - sonYearsOld
@@ -651,9 +605,6 @@
 //     return c;
 // }
 // console.log(twiceAsOld(40,15));
-
-
-
 
 // function digitize(n) {
 //     n = n.toString()
@@ -664,10 +615,6 @@
 //     return arr;
 // }
 // console.log(digitize());
-
-
-
-
 
 // function mymove(niz){
 //     min1 = niz[0]
@@ -685,10 +632,6 @@
 // }
 // mymove([3, 6, 9, 1, 4])
 
-
-
-
-
 // let niz = [3, 0, 23, 54, 0, 123, 0, 32, 63]
 
 // function mymove(niz) {
@@ -697,32 +640,23 @@
 //             niz.splice(i,1)
 //             niz.push(0)
 //         }
-        
+
 //     }
 //     return niz
 // }
 // console.log(mymove(niz));
 
-
-
-
-
 // let data = [3, 24, 54, 123, 32, 63]
 // function mymove(niz){
 //     suma = 0
-    
+
 //     for (let i = 0; i < niz.length; i++) {
 //         suma += niz[i]
-        
+
 //     }
 //     return suma/niz.length
-// }    
+// }
 // console.log(mymove(data));
-
-
-
-
-
 
 // data = [2, 5, 34, 65, 52, 98, 23, 66]
 
@@ -730,7 +664,6 @@
 //     return el % 2 === 0
 // })
 // console.log(parni);
-
 
 // neparni = data.map((el) => {
 //     if(el % 2 === 1){
@@ -741,24 +674,17 @@
 // })
 // console.log(neparni);
 
-
 // jed = data.every((el) => {
 //     return el > 11;
 // })
 // console.log(jed);
-
-
 
 // data = data.some((el) => {
 //     return el>90;
 // })
 // console.log(data);
 
-
-
-
 // data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]
-
 
 // niz = []
 
@@ -776,10 +702,6 @@
 // niz.push(sum)
 // console.log(niz);
 
-
-
-
-
 // function powersOfTwo(niz) {
 //     niz = Number(prompt("Unesite broj"))
 //     let arr = []
@@ -792,11 +714,7 @@
 //     console.log(arr);
 // }
 
-
 // console.log(powersOfTwo());
-
-
-
 
 // let n = Number(prompt("Unesite broj"))
 // let niz = []
@@ -807,18 +725,71 @@
 //     return 2 ** el
 // })
 
-
 // console.log(arr);
 
+// function mymove(n) {
+//     let niz = []
+//     for (let i = n; i > 0; i--) {
+//         niz.push(i)
+//     }
+//     return niz
+// }
+// console.log(mymove(5))
 
+// function mymove(n) {
+//     niz = []
+//     for (let i = 0; i < n; i++) {
+//         niz.push(i)
+//     }
+//     return 2 ** niz[i]
 
+// }
+// console.log(mymove(5));
 
+// function stray(numbers) {
+//     num = 0
 
-function mymove(n) {
-    let niz = []
-    for (let i = n; i > 0; i--) {
-        niz.push(i)
-    }
-    return niz
+//     if (numbers[0] !== numbers[1] && numbers[0] !== numbers[2]) {
+//         num = numbers[0]
+//     }
+//     if (numbers[numbers.length - 1] !== numbers[numbers.length - 2] &&
+//         numbers[numbers.length - 1] !== numbers[numbers.length - 3]) {
+//         num = numbers[numbers.length - 1]
+//     }
+//     for (let i = 0; i < numbers.length; i++) {
+//         if (numbers[i] !== numbers[i - 1] && numbers[i] !== numbers[i + 1]) {
+//             num = numbers[i]
+//             break
+//         }
+
+//     }
+//     return num
+// }
+
+// console.log(stray([1, 1, 1, 1, 1, 4, 1, 1]));
+
+// let niz = [12, 34, 63, 72, 55, 24]
+
+// function inverseSlice(items, a, b) {
+//     let pom = []
+//     for (let i = 0; i < niz.length; i++) {
+//         if(i < a || i >= b){
+//             pom.push(niz[i])
+//         }
+
+//     }
+//     return pom
+// }
+
+// console.log(inverseSlice(niz, 0, 3));
+
+function mymove(niz) {
+    niz.sort(function (a, b) { return a - b });
+    let max = niz[niz.length - 1];
+    let domax = niz[niz.length - 2]
+    return max + domax
 }
-console.log(mymove(5))
+console.log(mymove([-10, -8, -16, -18, -19]));
+
+
+
