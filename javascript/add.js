@@ -783,13 +783,26 @@
 
 // console.log(inverseSlice(niz, 0, 3));
 
-function mymove(niz) {
-    niz.sort(function (a, b) { return a - b });
-    let max = niz[niz.length - 1];
-    let domax = niz[niz.length - 2]
-    return max + domax
+// function mymove(niz) {
+//     niz.sort(function (a, b) { return a - b });
+//     let max = niz[niz.length - 1];
+//     let domax = niz[niz.length - 2]
+//     return max + domax
+// }
+// console.log(mymove([-10, -8, -16, -18, -19]));
+
+function largestPairSum (numbers){
+    max1 = numbers[0]
+    max2 = 0
+    for(el of numbers){
+        if(max1 < el){
+            max1 = el
+        }
+        else if(max2 < el && max1 > el ){
+            max2 = el
+        }
+    }
+    return max1 + max2
 }
-console.log(mymove([-10, -8, -16, -18, -19]));
-
-
+console.log(largestPairSum([2,99, 2, 23, 19] ));
 
