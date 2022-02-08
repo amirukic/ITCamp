@@ -791,18 +791,32 @@
 // }
 // console.log(mymove([-10, -8, -16, -18, -19]));
 
-function largestPairSum (numbers){
-    max1 = numbers[0]
-    max2 = 0
-    for(el of numbers){
-        if(max1 < el){
-            max1 = el
-        }
-        else if(max2 < el && max1 > el ){
-            max2 = el
-        }
-    }
-    return max1 + max2
-}
-console.log(largestPairSum([2,99, 2, 23, 19] ));
+// function largestPairSum (numbers){
+//     max1 = numbers[0]
+//     max2 = 0
+//     for(el of numbers){
+//         if(max1 < el){
+//             max1 = el
+//         }
+//         else if(max2 < el && max1 > el ){
+//             max2 = el
+//         }
+//     }
+//     return max1 + max2
+// }
+// console.log(largestPairSum([2,99, 2, 23, 19] ));
 
+covek1 = {
+  name: "Amir",
+  surname: "Ukic",
+  birthdate: "10.21.2001",
+  location: {
+    country: "SRB",
+    city: "NP",
+  },
+};
+covek2 = { ...covek1 };
+covek2.name = "Hasib"
+covek2.birthdate = "15.5.1966"
+console.log(covek1);
+console.log(covek2);
