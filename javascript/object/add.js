@@ -27,15 +27,43 @@ else{
 }
 
 
-///////////////////////////////////////////////////////////////////////////// DOMACI 1
+/////////////////////////////////////////////////////////////////////////////// DOMACI 1
 
-let student = {
-  name: "David Rayy",
-  sclass: "VI",
-  rollno: 12,
-};
-let niz = [];
-for (let el in student) {
-  niz.push(el);
+// let student = {
+//   name: "David Rayy",
+//   sclass: "VI",
+//   rollno: 12,
+// };
+// let niz = [];
+// for (let el in student) {
+//   niz.push(el);
+// }
+// console.log(niz);
+//////////////////////////////////////////////////////////////////////////////DOMACI 2
+var library = [
+  {
+    title: "Bill Gates",
+    author: "The Road Ahead",
+    readingStatus: true,
+  },
+  {
+    title: "Steve Jobs",
+    author: "Walter Isaacson",
+    readingStatus: true,
+  },
+  {
+    author: "Suzanne Collins",
+    title: "Mockingjay: The Final Book of The Hunger Games",
+    readingStatus: false,
+  },
+];
+
+for (let i = 0; i < library.length; i++) {
+  if (library[i].readingStatus) {
+    console.log("Procitao " + library[i].title + " od " + library[i].author);
+  } else {
+    console.log(
+      "Nisam procitao " + library[i].title + " od " + library[i].author
+    );
+  }
 }
-console.log(niz);
