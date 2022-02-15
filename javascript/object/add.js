@@ -76,29 +76,36 @@
 // console.log(student);
 //////////////////////////////////////////////////////////////////////////DOMACI 3
 var cat = {
-  sleep: function () {
-    this.glad += 5;
-    this.umor -= 10;
-  },
-  eat: function () {
-    this.glad -= 10;
-    this.sreca += 5;
-  },
-  play: function () {
-    this.umor += 10;
-    this.sreca += 5;
-    this.usamljenost += 5;
-  },
   umor: 0,
   glad: 0,
   usamljenost: 0,
   sreca: 0,
+  sleep: function (n) {
+    this.glad += 5 * n;
+    this.umor -= 10 * n;
+  },
+  eat: function (a) {
+    this.glad -= 15 * a;
+    this.sreca += 5 * a;
+  },
+  play: function (b) {
+    this.umor += 10 *b;
+    this.sreca += 5*b;
+    this.usamljenost -= 5*b;
+  },
+  pat: function () {
+    if (this.glad > 40 || this.umor > 60) {
+      console.log("The cat doesn't want to be petted!");
+    }
+  },
 };
 cat.umor = 40;
-cat.glad = 30;
+cat.glad = 40;
 cat.usamljenost = 20;
-cat.sreca = 70;
-cat.sleep();
-cat.eat()
-cat.play()
-console.log(cat);
+cat.sreca = 60;
+cat.sleep(3);
+cat.eat(3);
+cat.play(2);
+cat.pat();
+const {umor, glad, usamljenost, sreca} = cat; // Ovo se zove destructoring(razlaganje)
+console.log("umor =",umor,"\nglad =", glad,"\nusamljenost =", usamljenost,"\nsreca =", sreca);
