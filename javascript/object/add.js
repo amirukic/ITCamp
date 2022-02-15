@@ -26,7 +26,6 @@
 //   console.log(`Oboje imaju isti BMI`);
 // }
 
-
 /////////////////////////////////////////////////////////////////////////////// DOMACI 1
 
 // let student = {
@@ -68,12 +67,38 @@
 //   }
 // }
 
-
-
 // var student = {
 //   name : "David Rayy ",
 //   sclass : "VI",
-//   rollno : 12 
+//   rollno : 12
 // }
 // delete student.rollno
 // console.log(student);
+//////////////////////////////////////////////////////////////////////////DOMACI 3
+var cat = {
+  sleep: function () {
+    this.glad += 5;
+    this.umor -= 10;
+  },
+  eat: function () {
+    this.glad -= 10;
+    this.sreca += 5;
+  },
+  play: function () {
+    this.umor += 10;
+    this.sreca += 5;
+    this.usamljenost += 5;
+  },
+  umor: 0,
+  glad: 0,
+  usamljenost: 0,
+  sreca: 0,
+};
+cat.umor = 40;
+cat.glad = 30;
+cat.usamljenost = 20;
+cat.sreca = 70;
+cat.sleep();
+cat.eat()
+cat.play()
+console.log(cat);
