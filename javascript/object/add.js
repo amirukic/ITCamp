@@ -121,45 +121,52 @@
 // console.log(mymove({ a: 1, b: 2 }, "b"));
 
 
-var library = [
-    {
-    title: "Bill Gates",
-    author: "The Road Ahead",
-    readingStatus: true,
-    age: 29,
-  },
-  {
-    title: "Steve Jobs",
-    author: "Walter Isaacson",
-    readingStatus: true,
-    age: 14,
-  },
-  {
-    author: "Suzanne Collins",
-    title: "Mockingjay: The Final Book of The Hunger Games",
-    readingStatus: false,
-    age: 25,
-  },
-  {
-    title: "Bill Gates",
-    author: "The Road Ahead",
-    readingStatus: true,
-    age: 19,
-  },
-  {
-    title: "Steve Jobs",
-    author: "Walter Isaacson",
-    readingStatus: true,
-    age: 12,
-  },
-];
-function mymove(library) {
-  let niz = []
-  for (let i = 0; i < library.length; i++) {
-    if (library[i].age >= 18) {
-      niz.push(library[i])
-    }
-  }
-  return niz
-}
-console.log(mymove());
+// var library = [
+//     {
+//     title: "Bill Gates",
+//     author: "The Road Ahead",
+//     readingStatus: true,
+//     age: 29,
+//   },
+//   {
+//     title: "Steve Jobs",
+//     author: "Walter Isaacson",
+//     readingStatus: true,
+//     age: 14,
+//   },
+//   {
+//     author: "Suzanne Collins",
+//     title: "Mockingjay: The Final Book of The Hunger Games",
+//     readingStatus: false,
+//     age: 25,
+//   },
+//   {
+//     title: "Bill Gates",
+//     author: "The Road Ahead",
+//     readingStatus: true,
+//     age: 19,
+//   },
+//   {
+//     title: "Steve Jobs",
+//     author: "Walter Isaacson",
+//     readingStatus: true,
+//     age: 12,
+//   },
+// ];
+// function mymove(library) {
+//   let niz = []
+//   for (let i = 0; i < library.length; i++) {
+//     if (library[i].age >= 18) {
+//       niz.push(library[i])
+//     }
+//   }
+//   return niz
+// }
+// console.log(mymove());
+
+var pocetniPromise = Promise.resolve(33);
+var drugiPromise = Promise.resolve(pocetniPromise);
+drugiPromise.then(function(value) {
+  console.log('value: ' + value);
+});
+console.log('pocetniPromise === drugiPromise je ' + (pocetniPromise === drugiPromise));
