@@ -75,37 +75,91 @@
 // delete student.rollno
 // console.log(student);
 //////////////////////////////////////////////////////////////////////////DOMACI 3
-var cat = {
-  umor: 0,
-  glad: 0,
-  usamljenost: 0,
-  sreca: 0,
-  sleep: function (n) {
-    this.glad += 5 * n;
-    this.umor -= 10 * n;
+// var cat = {
+//   umor: 0,
+//   glad: 0,
+//   usamljenost: 0,
+//   sreca: 0,
+//   sleep: function (n) {
+//     this.glad += 5 * n;
+//     this.umor -= 10 * n;
+//   },
+//   eat: function (a) {
+//     this.glad -= 15 * a;
+//     this.sreca += 5 * a;
+//   },
+//   play: function (b) {
+//     this.umor += 10 *b;
+//     this.sreca += 5*b;
+//     this.usamljenost -= 5*b;
+//   },
+//   pat: function () {
+//     if (this.glad > 40 || this.umor > 60) {
+//       console.log("The cat doesn't want to be petted!");
+//     }
+//   },
+// };
+// cat.umor = 40;
+// cat.glad = 40;
+// cat.usamljenost = 20;
+// cat.sreca = 60;
+// cat.sleep(3);
+// cat.eat(3);
+// cat.play(2);
+// cat.pat();
+// const {umor, glad, usamljenost, sreca} = cat; // Ovo se zove destructoring(razlaganje)
+// console.log("umor =",umor,"\nglad =", glad,"\nusamljenost =", usamljenost,"\nsreca =", sreca);
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+// const data = { a: 1, b: 2 };
+// console.log(Object.entries(data));
+
+// function mymove(data, prop) {
+//   delete data[prop]
+//   return data  
+// }
+// console.log(mymove({ a: 1, b: 2 }, "b"));
+
+
+var library = [
+    {
+    title: "Bill Gates",
+    author: "The Road Ahead",
+    readingStatus: true,
+    age: 29,
   },
-  eat: function (a) {
-    this.glad -= 15 * a;
-    this.sreca += 5 * a;
+  {
+    title: "Steve Jobs",
+    author: "Walter Isaacson",
+    readingStatus: true,
+    age: 14,
   },
-  play: function (b) {
-    this.umor += 10 *b;
-    this.sreca += 5*b;
-    this.usamljenost -= 5*b;
+  {
+    author: "Suzanne Collins",
+    title: "Mockingjay: The Final Book of The Hunger Games",
+    readingStatus: false,
+    age: 25,
   },
-  pat: function () {
-    if (this.glad > 40 || this.umor > 60) {
-      console.log("The cat doesn't want to be petted!");
+  {
+    title: "Bill Gates",
+    author: "The Road Ahead",
+    readingStatus: true,
+    age: 19,
+  },
+  {
+    title: "Steve Jobs",
+    author: "Walter Isaacson",
+    readingStatus: true,
+    age: 12,
+  },
+];
+function mymove(library) {
+  let niz = []
+  for (let i = 0; i < library.length; i++) {
+    if (library[i].age >= 18) {
+      niz.push(library[i])
     }
-  },
-};
-cat.umor = 40;
-cat.glad = 40;
-cat.usamljenost = 20;
-cat.sreca = 60;
-cat.sleep(3);
-cat.eat(3);
-cat.play(2);
-cat.pat();
-const {umor, glad, usamljenost, sreca} = cat; // Ovo se zove destructoring(razlaganje)
-console.log("umor =",umor,"\nglad =", glad,"\nusamljenost =", usamljenost,"\nsreca =", sreca);
+  }
+  return niz
+}
+console.log(mymove());
