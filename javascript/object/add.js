@@ -164,9 +164,27 @@
 // }
 // console.log(mymove());
 
-var pocetniPromise = Promise.resolve(33);
-var drugiPromise = Promise.resolve(pocetniPromise);
-drugiPromise.then(function(value) {
-  console.log('value: ' + value);
-});
-console.log('pocetniPromise === drugiPromise je ' + (pocetniPromise === drugiPromise));
+// var pocetniPromise = Promise.resolve(33);
+// var drugiPromise = Promise.resolve(pocetniPromise);
+// drugiPromise.then(function(value) {
+//   console.log('value: ' + value);
+// });
+// console.log('pocetniPromise === drugiPromise je ' + (pocetniPromise === drugiPromise));
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function wash(dry) {
+  console.log("wash");
+  setTimeout(dry, 3000);
+}
+function dry(fold) {
+  console.log("dry");
+  setTimeout(fold, 2000);
+}
+function fold(done) {
+  console.log("fold");
+  console.log("done");
+}
+
+setTimeout(() => wash(() => dry(() => fold("done"))), 4000); 
