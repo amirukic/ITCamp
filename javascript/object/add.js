@@ -174,17 +174,37 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function wash(dry) {
-  console.log("wash");
-  setTimeout(dry, 3000);
-}
-function dry(fold) {
-  console.log("dry");
-  setTimeout(fold, 2000);
-}
-function fold(done) {
-  console.log("fold");
-  console.log("done");
+// function wash(dry) {
+//   console.log("wash");
+//   setTimeout(dry, 3000);
+// }
+// function dry(fold) {
+//   console.log("dry");
+//   setTimeout(fold, 2000);
+// }
+// function fold(done) {
+//   console.log("fold");
+//   console.log("done");
+// }
+
+// setTimeout(() => wash(() => dry(() => fold("done"))), 4000); 
+
+async function myFetch() {
+  let response = await fetch('coffee.jpg');
+
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+
+  let myBlob = await response.blob();
+
+  let objectURL = URL.createObjectURL(myBlob);
+  let image = document.createElement('img');
+  image.src = objectURL;
+  document.body.appendChild(image);
 }
 
-setTimeout(() => wash(() => dry(() => fold("done"))), 4000); 
+myFetch()
+  .catch(e => {
+    console.log('There has been a problem with your fetch operation: ' + e.message);
+  });
