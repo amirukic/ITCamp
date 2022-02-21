@@ -139,14 +139,14 @@
 // cilindar1.greska()
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////VEZBA
 class Person {
-  constructor(firstName = "John", lastName = "Doe", age = 0, gender = "Male") {
+  constructor(firstName = "John",lastName = "Doe", age = 0, gender = "Male") {
     this.firstName = firstName;
-    this.lastname = lastName;
+    this.lastName = lastName;
     this.age = age;
     this.gender = gender;
   }
-  sayFullName(firstName, lastname) {
-    return `Puno ime je ${this.firstName} ${this.lastname}`;
+  sayFullName(firstName, lastName) {
+    return `Puno ime je ${this.firstName} ${this.lastName}`;
   }
   static greetExtraTerrestrials(raceName) {
     return `Welcome to Planet Earth ${raceName}`;
@@ -154,4 +154,4 @@ class Person {
 }
 
 let covek = new Person("Amir", "Ukic", 20, "male");
-console.log(covek.sayFullName());
+console.log(covek.lastName);
