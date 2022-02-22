@@ -188,23 +188,23 @@
 // }
 
 // setTimeout(() => wash(() => dry(() => fold("done"))), 4000); 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// async function myFetch() {
+//   let response = await fetch('coffee.jpg');
 
-async function myFetch() {
-  let response = await fetch('coffee.jpg');
+//   if (!response.ok) {
+//     throw new Error(`HTTP error! status: ${response.status}`);
+//   }
 
-  if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`);
-  }
+//   let myBlob = await response.blob();
 
-  let myBlob = await response.blob();
+//   let objectURL = URL.createObjectURL(myBlob);
+//   let image = document.createElement('img');
+//   image.src = objectURL;
+//   document.body.appendChild(image);
+// }
 
-  let objectURL = URL.createObjectURL(myBlob);
-  let image = document.createElement('img');
-  image.src = objectURL;
-  document.body.appendChild(image);
-}
-
-myFetch()
-  .catch(e => {
-    console.log('There has been a problem with your fetch operation: ' + e.message);
-  });
+// myFetch()
+//   .catch(e => {
+//     console.log('There has been a problem with your fetch operation: ' + e.message);
+//   });
