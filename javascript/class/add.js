@@ -157,32 +157,38 @@
 // console.log(covek.lastName);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// PROMISE  
 // Resolve scenario
-const promise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    // Fuod truck found
-    // Change status from 'pending to fulfilled'
-    resolve('Bringing tacos');
-  }, 5000);
-});
-// Reject scenario
-const promise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    // Food truck not found
-    // Change status from 'pending to 'rejected'
-    reject('Not bringing tacos. Food truck not there');
-  }, 5000);
-});
-const onFulfillment = (result) => {
-  // resolve was called
-  console.log(result);
-  console.log("Set up the table to eat tacos");
-};
-const onRejection = (error) => {
-  // reject was called
-  console.log(error);
-  console.log("start cooking pasta");
-};
-promise.then();
-promise.catch();
-promise.then(onFulfillment);
-promise.catch(onRejection);
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     // Fuod truck found
+//     // Change status from 'pending to fulfilled'
+//     resolve('Bringing tacos');
+//   }, 5000);
+// });
+// // Reject scenario
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     // Food truck not found
+//     // Change status from 'pending to 'rejected'
+//     reject('Not bringing tacos. Food truck not there');
+//   }, 5000);
+// });
+// const onFulfillment = (result) => {
+//   // resolve was called
+//   console.log(result);
+//   console.log("Set up the table to eat tacos");
+// };
+// const onRejection = (error) => {
+//   // reject was called
+//   console.log(error);
+//   console.log("start cooking pasta");
+// };
+// promise.then();
+// promise.catch();
+// promise.then(onFulfillment);
+// promise.catch(onRejection);
+
+
+// let fifteen = Promise.resolve(15);
+// fifteen.then(value => console.log(`Got ${value}`));
+// // → Got 15
+
