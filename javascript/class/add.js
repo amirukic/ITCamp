@@ -155,7 +155,7 @@
 
 // let covek = new Person("Amir", "Ukic", 20, "male");
 // console.log(covek.lastName);
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// PROMISE  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// PROMISE
 // Resolve scenario
 // const promise = new Promise((resolve, reject) => {
 //   setTimeout(() => {
@@ -187,8 +187,21 @@
 // promise.then(onFulfillment);
 // promise.catch(onRejection);
 
-
 // let fifteen = Promise.resolve(15);
 // fifteen.then(value => console.log(`Got ${value}`));
 // // → Got 15
 
+function a (arg) {
+  console.log("neki kod");
+  console.log("NESTOOO");
+  arg()
+}
+function hello() {
+  console.log("Hello world");
+}
+// a(hello)
+
+a = hello
+b = a
+c = b
+c()
