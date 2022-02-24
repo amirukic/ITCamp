@@ -223,41 +223,50 @@
 // }
 // numbers.forEach(mojaF)
 
-var library = [
-      {
-      title: "Bill Gates",
-      author: "The Road Ahead",
-      readingStatus: true,
-      age: 29,
-    },
-    {
-      title: "Steve Jobs",
-      author: "Walter Isaacson",
-      readingStatus: true,
-      age: 14,
-    },
-    {
-      author: "Suzanne Collins",
-      title: "Mockingjay: The Final Book of The Hunger Games",
-      readingStatus: false,
-      age: 25,
-    },
-    {
-      title: "Bill Gates",
-      author: "The Road Ahead",
-      readingStatus: true,
-      age: 19,
-    },
-    {
-      title: "Steve Jobs",
-      author: "Walter Isaacson",
-      readingStatus: true,
-      age: 12,
-    },
-  ];
+// var library = [
+//       {
+//       title: "Bill Gates",
+//       author: "The Road Ahead",
+//       readingStatus: true,
+//       age: 29,
+//     },
+//     {
+//       title: "Steve Jobs",
+//       author: "Walter Isaacson",
+//       readingStatus: true,
+//       age: 14,
+//     },
+//     {
+//       author: "Suzanne Collins",
+//       title: "Mockingjay: The Final Book of The Hunger Games",
+//       readingStatus: false,
+//       age: 25,
+//     },
+//     {
+//       title: "Bill Gates",
+//       author: "The Road Ahead",
+//       readingStatus: true,
+//       age: 19,
+//     },
+//     {
+//       title: "Steve Jobs",
+//       author: "Walter Isaacson",
+//       readingStatus: true,
+//       age: 12,
+//     },
+//   ];
 
-const mojaF = (a) => {
-  console.log(a.author);
-}
-library.forEach(mojaF)
+// const mojaF = (a) => {
+//   console.log(a.author);
+// }
+// library.forEach(mojaF)
+
+const numbers = [45, 4, 9, 16, 25, 13, 38, 68, 61, 52, 29];
+const evenNumbers = [];
+numbers.forEach((el) => {
+  if(el % 2 === 0){
+    evenNumbers.push(el)
+  }
+})
+console.log(evenNumbers);
 
