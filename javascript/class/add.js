@@ -261,12 +261,21 @@
 // }
 // library.forEach(mojaF)
 
-const numbers = [45, 4, 9, 16, 25, 13, 38, 68, 61, 52, 29];
-const evenNumbers = [];
-numbers.forEach((el) => {
-  if(el % 2 === 0){
-    evenNumbers.push(el)
-  }
-})
-console.log(evenNumbers);
+// const numbers = [45, 4, 9, 16, 25, 13, 38, 68, 61, 52, 29];
+// const evenNumbers = [];
+// numbers.forEach((el) => {
+//   if(el % 2 === 0){
+//     evenNumbers.push(el)
+//   }
+// })
+// console.log(evenNumbers);
 
+const data = [NaN, 0,15,false,-22,"", undefined,47,null]
+let a = 0
+data.forEach((el) => {
+  if(!el){
+    a++
+  }
+  
+})
+console.log(a);
