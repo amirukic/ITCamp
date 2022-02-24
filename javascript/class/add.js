@@ -206,13 +206,20 @@
 // c = b
 // c()
 ///////////////////////////////////////////////////////////////////////////////////////////
-const numbers = [1, 2, 3, 4, 5];
-const mojaF = (a, b, c) => {
-  console.log("Hello World");
-  console.log(b);
-};
-// for (let i = 0; i < numbers.length; i++) {
-//   mojaF();
-// }
-numbers.forEach(mojaF);
+// const numbers = [1, 2, 3, 4, 5];
+// const mojaF = (a, b, c) => {
+//   console.log("Hello World");
+//   console.log(b);
+// };
+// // for (let i = 0; i < numbers.length; i++) {
+// //   mojaF();
+// // }
+// numbers.forEach(mojaF);
+
+const numbers = [37, 28, 14, 6, 19, 55, 11]
+
+const mojaF = (a,b) => {
+  console.log(`broj ${a**2} je na poziciji ${b}`);
+}
+numbers.forEach(mojaF)
 
