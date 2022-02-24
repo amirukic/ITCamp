@@ -216,10 +216,48 @@
 // // }
 // numbers.forEach(mojaF);
 
-const numbers = [37, 28, 14, 6, 19, 55, 11]
+// const numbers = [37, 28, 14, 6, 19, 55, 11]
 
-const mojaF = (a,b) => {
-  console.log(`broj ${a**2} je na poziciji ${b}`);
+// const mojaF = (a,b) => {
+//   console.log(`broj ${a**2} je na poziciji ${b}`);
+// }
+// numbers.forEach(mojaF)
+
+var library = [
+      {
+      title: "Bill Gates",
+      author: "The Road Ahead",
+      readingStatus: true,
+      age: 29,
+    },
+    {
+      title: "Steve Jobs",
+      author: "Walter Isaacson",
+      readingStatus: true,
+      age: 14,
+    },
+    {
+      author: "Suzanne Collins",
+      title: "Mockingjay: The Final Book of The Hunger Games",
+      readingStatus: false,
+      age: 25,
+    },
+    {
+      title: "Bill Gates",
+      author: "The Road Ahead",
+      readingStatus: true,
+      age: 19,
+    },
+    {
+      title: "Steve Jobs",
+      author: "Walter Isaacson",
+      readingStatus: true,
+      age: 12,
+    },
+  ];
+
+const mojaF = (a) => {
+  console.log(a.author);
 }
-numbers.forEach(mojaF)
+library.forEach(mojaF)
 
