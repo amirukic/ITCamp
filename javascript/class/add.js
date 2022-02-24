@@ -191,17 +191,28 @@
 // fifteen.then(value => console.log(`Got ${value}`));
 // // → Got 15
 
-function a (arg) {
-  console.log("neki kod");
-  console.log("NESTOOO");
-  arg()
-}
-function hello() {
-  console.log("Hello world");
-}
-// a(hello)
+// function a (arg) {
+//   console.log("neki kod");
+//   console.log("NESTOOO");
+//   arg()
+// }
+// function hello() {
+//   console.log("Hello world");
+// }
+// // a(hello)
 
-a = hello
-b = a
-c = b
-c()
+// a = hello
+// b = a
+// c = b
+// c()
+///////////////////////////////////////////////////////////////////////////////////////////
+const numbers = [1, 2, 3, 4, 5];
+const mojaF = (a, b, c) => {
+  console.log("Hello World");
+  console.log(b);
+};
+// for (let i = 0; i < numbers.length; i++) {
+//   mojaF();
+// }
+numbers.forEach(mojaF);
+
