@@ -208,3 +208,16 @@
 //   .catch(e => {
 //     console.log('There has been a problem with your fetch operation: ' + e.message);
 //   });
+
+
+var animal = {
+    name : "dog",
+    legs : 4,
+    color : "white",
+    anime : function () {
+        console.log(`This ${this.color} ${this.name} has ${this.legs} legs. `);
+    },
+}
+
+
+animal.anime()
