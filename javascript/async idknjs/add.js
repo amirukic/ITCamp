@@ -1,3 +1,10 @@
-// ajax(..) is some arbitrary Ajax function given by a library
-var data = ajax( "http://some.url.1" );
-console.log(data);
+function now() {
+  return 21;
+}
+function later() {
+  answer = answer * 2;
+  console.log("Meaning of life:", answer);
+}
+var answer = now();
+setTimeout(later, 1000);
+
