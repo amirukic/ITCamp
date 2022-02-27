@@ -270,12 +270,22 @@
 // })
 // console.log(evenNumbers);
 
-const data = [NaN, 0,15,false,-22,"", undefined,47,null]
-let a = 0
-data.forEach((el) => {
-  if(!el){
-    a++
-  }
-  
-})
-console.log(a);
+// const data = [NaN, 0,15,false,-22,"", undefined,47,null]
+// let a = 0
+// data.forEach((el) => {
+//   if(!el){
+//     a++
+//   }
+
+// })
+// console.log(a);
+
+function findMissing(arr1, arr2) {
+  arr2.forEach((el) => {
+    if (arr1.includes(el)) {
+      arr1.splice(arr1.indexOf(el), 1);
+    }
+  });
+  return arr1[0];
+}
+
