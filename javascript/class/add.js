@@ -289,3 +289,11 @@ function findMissing(arr1, arr2) {
   return arr1[0];
 }
 
+function findMissing(arr1, arr2) {
+	let str = arr1.filter(i => !arr2.includes(i)).join('');
+	return Number(str);
+}
+
+console.log(findMissing([6, 1, 3, 6, 8, 2], [3, 6, 6, 1, 2]));
+
+
