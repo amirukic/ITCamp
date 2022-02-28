@@ -280,20 +280,34 @@
 // })
 // console.log(a);
 
-function findMissing(arr1, arr2) {
-  arr2.forEach((el) => {
-    if (arr1.includes(el)) {
-      arr1.splice(arr1.indexOf(el), 1);
-    }
-  });
-  return arr1[0];
-}
+// function findMissing(arr1, arr2) {
+//   arr2.forEach((el) => {
+//     if (arr1.includes(el)) {
+//       arr1.splice(arr1.indexOf(el), 1);
+//     }
+//   });
+//   return arr1[0];
+// }
 
-function findMissing(arr1, arr2) {
-	let str = arr1.filter(i => !arr2.includes(i)).join('');
-	return Number(str);
-}
+// function findMissing(arr1, arr2) {
+// 	let str = arr1.filter(i => !arr2.includes(i)).join('');
+// 	return Number(str);
+// }
 
-console.log(findMissing([6, 1, 3, 6, 8, 2], [3, 6, 6, 1, 2]));
+// console.log(findMissing([6, 1, 3, 6, 8, 2], [3, 6, 6, 1, 2]));
 
+const heros = [
+  { name: "Spider-man" },
+  { name: "Thor" },
+  { name: "Black Panther" },
+  { name: "Captain Marvel" },
+  { name: "Silver Surfer" },
+];
 
+const heros2 = heros.map((el, index) => {
+  return {
+    id: index,
+    hero: el.name,
+  };
+});
+console.log(heros2);
