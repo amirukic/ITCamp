@@ -296,18 +296,19 @@
 
 // console.log(findMissing([6, 1, 3, 6, 8, 2], [3, 6, 6, 1, 2]));
 
-const heros = [
-  { name: "Spider-man" },
-  { name: "Thor" },
-  { name: "Black Panther" },
-  { name: "Captain Marvel" },
-  { name: "Silver Surfer" },
-];
+// const heros = [
+//   { name: "Spider-man" },
+//   { name: "Thor" },
+//   { name: "Black Panther" },
+//   { name: "Captain Marvel" },
+//   { name: "Silver Surfer" },
+// ];
 
-const heros2 = heros.map((el, index) => {
-  return {
-    id: index,
-    hero: el.name,
-  };
-});
-console.log(heros2);
+// const heros2 = heros.map((el, index) => {
+//   return {
+//     id: index,
+//     hero: el.name,
+//   };
+// });
+// console.log(heros2);
+

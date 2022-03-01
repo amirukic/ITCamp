@@ -7,4 +7,3 @@ function later() {
 }
 var answer = now();
 setTimeout(later, 1000);
-
