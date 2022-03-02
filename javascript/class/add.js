@@ -312,3 +312,14 @@
 // });
 // console.log(heros2);
 
+function* countAppleSales() {
+  let saleList = [3, 7, 5];
+  for (let i = 0; i < saleList.length; i++) {
+    yield saleList[i];
+  }
+}
+let appleStore = countAppleSales(); // Generator { }
+console.log(appleStore.next()); // { value: 3, done: false }
+console.log(appleStore.next()); // { value: 7, done: false }
+console.log(appleStore.next()); // { value: 5, done: false }
+console.log(appleStore.next()); // { value: undefined, done: true }
