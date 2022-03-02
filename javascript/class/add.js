@@ -312,14 +312,34 @@
 // });
 // console.log(heros2);
 
-function* countAppleSales() {
-  let saleList = [3, 7, 5];
-  for (let i = 0; i < saleList.length; i++) {
-    yield saleList[i];
+// function* countAppleSales() {
+//   let saleList = [3, 7, 5];
+//   for (let i = 0; i < saleList.length; i++) {
+//     yield saleList[i];
+//   }
+// }
+// let appleStore = countAppleSales(); // Generator { }
+// console.log(appleStore.next()); // { value: 3, done: false }
+// console.log(appleStore.next()); // { value: 7, done: false }
+// console.log(appleStore.next()); // { value: 5, done: false }
+// console.log(appleStore.next()); // { value: undefined, done: true }
+
+function* counter(value) {
+  let step;
+
+  while (true) {
+    step = yield ++value;
+
+    if (step) {
+      value += step;
+    }
   }
 }
-let appleStore = countAppleSales(); // Generator { }
-console.log(appleStore.next()); // { value: 3, done: false }
-console.log(appleStore.next()); // { value: 7, done: false }
-console.log(appleStore.next()); // { value: 5, done: false }
-console.log(appleStore.next()); // { value: undefined, done: true }
+
+const generatorFunc = counter(0);
+console.log(generatorFunc.next().value); // 1
+console.log(generatorFunc.next().value); // 2
+console.log(generatorFunc.next().value); // 3
+console.log(generatorFunc.next(10).value); // 14
+console.log(generatorFunc.next().value); // 15
+console.log(generatorFunc.next(10).value); // 26
