@@ -34,27 +34,50 @@
 //   }
 // );
 
-const userLeft = false;
-const userWatchingCatMeme = false;
-function prviPromis() {
+// const userLeft = false;
+// const userWatchingCatMeme = false;
+// function prviPromis() {
+//   return new Promise((resolve, reject) => {
+//     if (userLeft) {
+//       reject({
+//         name: "User Left",
+//         message: ":(",
+//       });
+//     } else if (userWatchingCatMeme) {
+//       reject({
+//         name: "User Watching Cat Meme",
+//         message: "WebDevSimplified < Cat",
+//       });
+//     } else {
+//       resolve("Thumbs up and Subscribe");
+//     }
+//   });
+// }
+// prviPromis().then((message) => {
+//   console.log('Succes:' + message);
+// }).catch((error) => {
+//   console.log(error.name + ' ' + error.message);
+// })
+
+var onFulfillment = false;
+
+function myPromise() {
   return new Promise((resolve, reject) => {
-    if (userLeft) {
-      reject({
-        name: "User Left",
-        message: ":(",
-      });
-    } else if (userWatchingCatMeme) {
-      reject({
-        name: "User Watching Cat Meme",
-        message: "WebDevSimplified < Cat",
+    if (onFulfillment) {
+      resolve({
+        name: "tacos",
+        message: "stigli su tacosi",
       });
     } else {
-      resolve("Thumbs up and Subscribe");
+      reject({
+        name: "pasta",
+        message: "nema tacosa",
+      });
     }
   });
 }
-prviPromis().then((message) => {
-  console.log('Succes:' + message);
+myPromise().then((message) => {
+  console.log(message.message);
 }).catch((error) => {
-  console.log(error.name + ' ' + error.message);
+  console.log(error.message);
 })
