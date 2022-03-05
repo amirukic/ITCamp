@@ -59,25 +59,38 @@
 //   console.log(error.name + ' ' + error.message);
 // })
 
-var onFulfillment = false;
+// var onFulfillment = false;
 
-function myPromise() {
-  return new Promise((resolve, reject) => {
-    if (onFulfillment) {
-      resolve({
-        name: "tacos",
-        message: "stigli su tacosi",
-      });
-    } else {
-      reject({
-        name: "pasta",
-        message: "nema tacosa",
-      });
-    }
-  });
-}
-myPromise().then((message) => {
-  console.log(message.message);
-}).catch((error) => {
-  console.log(error.message);
-})
+// function myPromise() {
+//   return new Promise((resolve, reject) => {
+//     if (onFulfillment) {
+//       resolve({
+//         name: "tacos",
+//         message: "stigli su tacosi",
+//       });
+//     } else {
+//       reject({
+//         name: "pasta",
+//         message: "nema tacosa",
+//       });
+//     }
+//   });
+// }
+// myPromise().then((message) => {
+//   console.log(message.message);
+// }).catch((error) => {
+//   console.log(error.message);
+// })
+
+const promise = new Promise((resolve, reject) => {
+  const res = true;
+  // An asynchronous operation.
+  if (res) {
+    resolve('Resolved!');
+  }
+  else {
+    reject(Error('Error'));
+  }
+});
+
+promise.then((res) => console.log(res), (err) => alert(err));
