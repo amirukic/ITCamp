@@ -82,15 +82,40 @@
 //   console.log(error.message);
 // })
 
-const promise = new Promise((resolve, reject) => {
-  const res = true;
-  // An asynchronous operation.
-  if (res) {
-    resolve('Resolved!');
-  }
-  else {
-    reject(Error('Error'));
-  }
-});
+// const promise = new Promise((resolve, reject) => {
+//   const res = true;
+//   // An asynchronous operation.
+//   if (res) {
+//     resolve('Resolved!');
+//   }
+//   else {
+//     reject(Error('Error'));
+//   }
+// });
 
-promise.then((res) => console.log(res), (err) => alert(err));
+// promise.then((res) => console.log(res), (err) => alert(err));
+
+const inventory = {
+  sunglasses: prompt("Koliko zelite da uzmete"),
+  pants: 1088,
+  bags: 1344,
+};
+
+const myExecutor = (resolve,reject) => {
+  if(inventory.sunglasses > 0){
+    resolve('Sunglasses order processed.')
+  } else{
+    reject('That item is sold out.')
+  }
+}
+function myExecutor () {
+  return new Promise ((resolve,reject) => {
+    if(inventory.sunglasses > 0) {
+      resolve('Sunglasses order processed.')
+    }
+    else{
+      reject('That item is sold out.')
+    }
+  })
+}
+myExecutor(inventory)
