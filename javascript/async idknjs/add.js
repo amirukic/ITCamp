@@ -95,27 +95,69 @@
 
 // promise.then((res) => console.log(res), (err) => alert(err));
 
-const inventory = {
-  sunglasses: prompt("Koliko zelite da uzmete"),
-  pants: 1088,
-  bags: 1344,
-};
+// const inventory = {
+//   sunglasses: prompt("Koliko zelite da uzmete"),
+//   pants: 1088,
+//   bags: 1344,
+// };
 
-const myExecutor = (resolve,reject) => {
-  if(inventory.sunglasses > 0){
-    resolve('Sunglasses order processed.')
-  } else{
-    reject('That item is sold out.')
+// const myExecutor = (resolve,reject) => {
+//   if(inventory.sunglasses > 0){
+//     resolve('Sunglasses order processed.')
+//   } else{
+//     reject('That item is sold out.')
+//   }
+// }
+// function myExecutor () {
+//   return new Promise ((resolve,reject) => {
+//     if(inventory.sunglasses > 0) {
+//       resolve('Sunglasses order processed.')
+//     }
+//     else{
+//       reject('That item is sold out.')
+//     }
+//   })
+// }
+// myExecutor(inventory)
+
+function makeRequest(location) {
+  return new Promise((resolve, reject) => {
+    console.log(`Making Request to ${location}`);
+    if (location === "Google") {
+      resolve(`${location} says hi`);
+    } else {
+      reject("We can only talk to Google");
+    }
+  });
+}
+function processRequest(response) {
+  return new Promise((resolve, reject) => {
+    console.log("Processing response");
+    resolve(`Extra Information + ${response}`);
+  });
+}
+
+// makeRequest("YouTube")                       |
+//   .then((response) => {                      |
+//     console.log("Response received");        |
+//     return processRequest(response);         |
+//   })                                         |
+//   .then((processedResponse) => {             |         WITH PROMISE
+//     console.log(processedResponse);          |
+//   })                                         |
+//   .catch((err) => {                          |
+//     console.log(err);                        |
+//   });                                        |
+
+  async function doWork () {
+    try {
+      const response = await makeRequest('Google')
+      console.log("Response Received");
+      const processedResponse = await processRequest(response)
+      console.log(processedResponse);
+    } catch (err) {
+      console.log(err);
+    }
+
   }
-}
-function myExecutor () {
-  return new Promise ((resolve,reject) => {
-    if(inventory.sunglasses > 0) {
-      resolve('Sunglasses order processed.')
-    }
-    else{
-      reject('That item is sold out.')
-    }
-  })
-}
-myExecutor(inventory)
+  doWork()
