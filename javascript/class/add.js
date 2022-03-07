@@ -324,22 +324,62 @@
 // console.log(appleStore.next()); // { value: 5, done: false }
 // console.log(appleStore.next()); // { value: undefined, done: true }
 
-function* counter(value) {
-  let step;
+// function* counter(value) {
+//   let step;
 
-  while (true) {
-    step = yield ++value;
+//   while (true) {
+//     step = yield ++value;
 
-    if (step) {
-      value += step;
-    }
-  }
-}
+//     if (step) {
+//       value += step;
+//     }
+//   }
+// }
 
-const generatorFunc = counter(0);
-console.log(generatorFunc.next().value); // 1
-console.log(generatorFunc.next().value); // 2
-console.log(generatorFunc.next().value); // 3
-console.log(generatorFunc.next(10).value); // 14
-console.log(generatorFunc.next().value); // 15
-console.log(generatorFunc.next(10).value); // 26
+// const generatorFunc = counter(0);
+// console.log(generatorFunc.next().value); // 1
+// console.log(generatorFunc.next().value); // 2
+// console.log(generatorFunc.next().value); // 3
+// console.log(generatorFunc.next(10).value); // 14
+// console.log(generatorFunc.next().value); // 15
+// console.log(generatorFunc.next(10).value); // 26
+
+const characters = [
+  {
+    name: "Luke Skywalker",
+    height: "172",
+    mass: "77",
+    eye_color: "blue",
+    gender: "male",
+  },
+  {
+    name: "Darth Vader",
+    height: "202",
+    mass: "136",
+    eye_color: "yellow",
+    gender: "male",
+  },
+  {
+    name: "Leia Organa",
+    height: "150",
+    mass: "49",
+    eye_color: "brown",
+    gender: "female",
+  },
+  {
+    name: "Anakin Skywalker",
+    height: "188",
+    mass: "84",
+    eye_color: "blue",
+    gender: "male",
+  },
+];
+///////////////////////////////////////////////////////////////////// FILTER FUNCTION
+// let nova = characters.filter(el => el.mass > 100)
+// console.log(nova);
+// let visina = characters.filter(el => el.height < 200)
+// console.log(visina);
+// let male = characters.filter(el => el.gender === "male")
+// console.log(male);
+let female = characters.filter(el => el.gender === "female")
+console.log(female);
