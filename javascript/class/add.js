@@ -381,5 +381,30 @@ const characters = [
 // console.log(visina);
 // let male = characters.filter(el => el.gender === "male")
 // console.log(male);
-let female = characters.filter(el => el.gender === "female")
-console.log(female);
+// let female = characters.filter(el => el.gender === "female")
+// console.log(female);
+
+/////////////////////////////////////////////////////////////////// FILTER FUNCTION
+let names = characters.map((el) => {
+  return el.name
+})
+console.log(names);
+
+let heights = characters.map((el) => {
+  return el.height
+})
+console.log(heights);
+
+let all = characters.map((el) => {
+  delete el.eye_color
+  delete el.gender
+  delete el.mass
+  return el
+})
+console.log(all);
+
+let first = characters.map((el) => {
+  let ime = el.name.split(" ")
+  return ime[0]
+})
+console.log(first);
