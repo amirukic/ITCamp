@@ -384,27 +384,37 @@ const characters = [
 // let female = characters.filter(el => el.gender === "female")
 // console.log(female);
 
-/////////////////////////////////////////////////////////////////// FILTER FUNCTION
-let names = characters.map((el) => {
-  return el.name
-})
-console.log(names);
+/////////////////////////////////////////////////////////////////// MAP FUNCTION
+// let names = characters.map((el) => {
+//   return el.name
+// })
+// console.log(names);
 
-let heights = characters.map((el) => {
-  return el.height
-})
-console.log(heights);
+// let heights = characters.map((el) => {
+//   return el.height
+// })
+// console.log(heights);
 
-let all = characters.map((el) => {
-  delete el.eye_color
-  delete el.gender
-  delete el.mass
-  return el
-})
-console.log(all);
+// let all = characters.map((el) => {
+//   delete el.eye_color
+//   delete el.gender
+//   delete el.mass
+//   return el
+// })
+// console.log(all);
 
-let first = characters.map((el) => {
-  let ime = el.name.split(" ")
-  return ime[0]
-})
-console.log(first);
+// let first = characters.map((el) => {
+//   let ime = el.name.split(" ")
+//   return ime[0]
+// })
+// console.log(first);
+
+////////////////////////////////////////////////////////////////////////////// SOME FUNCTION
+
+console.log(characters.some(el => el.gender === "male"));
+
+console.log(characters.some(el => el.eye_color === "blue"));
+
+console.log(characters.some(el => el.height > "200"));
+
+console.log(characters.some(el => el.mass < "50"));
