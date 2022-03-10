@@ -411,10 +411,32 @@ const characters = [
 
 ////////////////////////////////////////////////////////////////////////////// SOME FUNCTION
 
-console.log(characters.some(el => el.gender === "male"));
+// console.log(characters.some(el => el.gender === "male"));
 
-console.log(characters.some(el => el.eye_color === "blue"));
+// console.log(characters.some(el => el.eye_color === "blue"));
 
-console.log(characters.some(el => el.height > "200"));
+// console.log(characters.some(el => el.height > "200"));
 
-console.log(characters.some(el => el.mass < "50"));
+// console.log(characters.some(el => el.mass < "50"));
+
+////////////////////////////////////////////////////////////////////////////// EVERY FUNCTION
+
+let eyes = characters.every((el) => {
+  return el.eye_color === "blue"
+})
+console.log(eyes);
+
+let tezina = characters.every((el) => {
+  return el.mass > 40
+})
+console.log(tezina);
+
+let visina = characters.every((el) => {
+  return el.height < 200
+})
+console.log(visina);
+
+let pol = characters.every((el) => {
+  return el.gender === "male"
+})
+console.log(pol);
