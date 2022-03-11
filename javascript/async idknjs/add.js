@@ -120,44 +120,80 @@
 // }
 // myExecutor(inventory)
 
-function makeRequest(location) {
-  return new Promise((resolve, reject) => {
-    console.log(`Making Request to ${location}`);
-    if (location === "Google") {
-      resolve(`${location} says hi`);
-    } else {
-      reject("We can only talk to Google");
-    }
+// function makeRequest(location) {
+//   return new Promise((resolve, reject) => {
+//     console.log(`Making Request to ${location}`);
+//     if (location === "Google") {
+//       resolve(`${location} says hi`);
+//     } else {
+//       reject("We can only talk to Google");
+//     }
+//   });
+// }
+// function processRequest(response) {
+//   return new Promise((resolve, reject) => {
+//     console.log("Processing response");
+//     resolve(`Extra Information + ${response}`);
+//   });
+// }
+
+// // makeRequest("YouTube")                       |
+// //   .then((response) => {                      |
+// //     console.log("Response received");        |
+// //     return processRequest(response);         |
+// //   })                                         |
+// //   .then((processedResponse) => {             |         WITH PROMISE
+// //     console.log(processedResponse);          |
+// //   })                                         |
+// //   .catch((err) => {                          |
+// //     console.log(err);                        |
+// //   });                                        |
+
+//   async function doWork () {
+//     try {
+//       const response = await makeRequest('Google')
+//       console.log("Response Received");
+//       const processedResponse = await processRequest(response)
+//       console.log(processedResponse);
+//     } catch (err) {
+//       console.log(err);
+//     }
+
+//   }
+//   doWork()
+
+function job(state) {
+  return new Promise(function(resolve, reject) {
+      if (state) {
+          resolve('success');
+      } else {
+          reject('error');
+      }
   });
 }
-function processRequest(response) {
-  return new Promise((resolve, reject) => {
-    console.log("Processing response");
-    resolve(`Extra Information + ${response}`);
-  });
-}
 
-// makeRequest("YouTube")                       |
-//   .then((response) => {                      |
-//     console.log("Response received");        |
-//     return processRequest(response);         |
-//   })                                         |
-//   .then((processedResponse) => {             |         WITH PROMISE
-//     console.log(processedResponse);          |
-//   })                                         |
-//   .catch((err) => {                          |
-//     console.log(err);                        |
-//   });                                        |
+let promise = job(true);
 
-  async function doWork () {
-    try {
-      const response = await makeRequest('Google')
-      console.log("Response Received");
-      const processedResponse = await processRequest(response)
-      console.log(processedResponse);
-    } catch (err) {
-      console.log(err);
-    }
+promise
 
-  }
-  doWork()
+.then(function(data) {
+  console.log(data);
+
+  return job(false);
+})
+
+.catch(function(error) {
+  console.log(error);
+
+  return 'Error caught';
+})
+
+.then(function(data) {
+  console.log(data);
+
+  return job(true);
+})
+
+.catch(function(error) {
+  console.log(error);
+});
