@@ -421,22 +421,38 @@ const characters = [
 
 ////////////////////////////////////////////////////////////////////////////// EVERY FUNCTION
 
-let eyes = characters.every((el) => {
-  return el.eye_color === "blue"
-})
-console.log(eyes);
+// let eyes = characters.every((el) => {
+//   return el.eye_color === "blue"
+// })
+// console.log(eyes);
 
-let tezina = characters.every((el) => {
-  return el.mass > 40
-})
-console.log(tezina);
+// let tezina = characters.every((el) => {
+//   return el.mass > 40
+// })
+// console.log(tezina);
 
-let visina = characters.every((el) => {
-  return el.height < 200
-})
-console.log(visina);
+// let visina = characters.every((el) => {
+//   return el.height < 200
+// })
+// console.log(visina);
 
-let pol = characters.every((el) => {
-  return el.gender === "male"
-})
-console.log(pol);
+// let pol = characters.every((el) => {
+//   return el.gender === "male"
+// })
+// console.log(pol);
+
+var e = 10;
+function sum(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
+        return a + b + c + d + e;
+      };
+    };
+  };
+}
+f1 = sum(1)
+f2 = f1(2)
+f3= f2(3)
+res = f3(4)
+console.log(res);
