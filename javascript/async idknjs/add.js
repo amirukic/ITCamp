@@ -198,66 +198,77 @@
 //   console.log(error);
 // });
 
-function job(state) {
-  return new Promise(function (resolve, reject) {
-    if (state) {
-      resolve("success");
-    } else {
-      reject("error");
+// function job(state) {
+//   return new Promise(function (resolve, reject) {
+//     if (state) {
+//       resolve("success");
+//     } else {
+//       reject("error");
+//     }
+//   });
+// }
+
+// let promise = job(true);
+
+// promise
+
+//   .then(function (data) {
+//     console.log(data);                   //succes
+
+//     return job(true);
+//   })
+
+//   .then(function (data) {
+//     if (data !== "victory") {
+//       throw "Defeat";                    //defeat
+//     }
+
+//     return job(true);
+//   })
+
+//   .then(function (data) {
+//     console.log(data);
+//   })
+
+//   .catch(function (error) {
+//     console.log(error);
+
+//     return job(false);
+//   })
+
+//   .then(function (data) {
+//     console.log(data);
+
+//     return job(true);
+//   })
+
+//   .catch(function (error) {
+//     console.log(error);
+//                                   //error caugth
+//     return "Error caught";
+//   })
+
+//   .then(function (data) {
+//     console.log(data);
+
+//     return new Error("test");
+//   })
+
+//   .then(function (data) {
+//     console.log("Success:", data.message);   // succes test
+//   })
+
+//   .catch(function (data) {
+//     console.log("Error:", data.message);
+//   });
+
+async function f2() {
+  const thenable = {
+    then: function(resolve, _reject) {
+      resolve('resolved!')
     }
-  });
+  };
+  console.log(await thenable); // resolved!
 }
 
-let promise = job(true);
-
-promise
-
-  .then(function (data) {
-    console.log(data);                   //succes
-
-    return job(true);
-  })
-
-  .then(function (data) {
-    if (data !== "victory") {
-      throw "Defeat";                    //defeat
-    }
-
-    return job(true);
-  })
-
-  .then(function (data) {
-    console.log(data);
-  })
-
-  .catch(function (error) {
-    console.log(error);
-
-    return job(false);
-  })
-
-  .then(function (data) {
-    console.log(data);
-
-    return job(true);
-  })
-
-  .catch(function (error) {
-    console.log(error);
-                                  //error caugth
-    return "Error caught";
-  })
-
-  .then(function (data) {
-    console.log(data);
-
-    return new Error("test");
-  })
-
-  .then(function (data) {
-    console.log("Success:", data.message);   // succes test
-  })
-
-  .catch(function (data) {
-    console.log("Error:", data.message);
-  });
+f2();
