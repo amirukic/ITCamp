@@ -262,13 +262,23 @@
 //     console.log("Error:", data.message);
 //   });
 
-async function f2() {
-  const thenable = {
-    then: function(resolve, _reject) {
-      resolve('resolved!')
-    }
-  };
-  console.log(await thenable); // resolved!
-}
+// async function f2() {
+//   const thenable = {
+//     then: function(resolve, _reject) {
+//       resolve('resolved!')
+//     }
+//   };
+//   console.log(await thenable); // resolved!
+// }
 
-f2();
+// f2();
+
+const promise1 = Promise.resolve(3);
+const promise2 = 42;
+const promise3 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 100, 'string');
+});
+
+Promise.all([promise1, promise2, promise3]).then((values) => {
+  console.log(values);
+});
