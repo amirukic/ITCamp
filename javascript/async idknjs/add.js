@@ -273,12 +273,18 @@
 
 // f2();
 
-const promise1 = Promise.resolve(3);
-const promise2 = 42;
-const promise3 = new Promise((resolve, reject) => {
-  setTimeout(resolve, 100, 'string');
-});
+// const promise1 = Promise.resolve(3);
+// const promise2 = 42;
+// const promise3 = new Promise((resolve, reject) => {
+//   setTimeout(resolve, 100, 'string');
+// });
 
-Promise.all([promise1, promise2, promise3]).then((values) => {
-  console.log(values);
-});
+// Promise.all([promise1, promise2, promise3]).then((values) => {
+//   console.log(values);
+// });
+
+var p = Promise.all([1,2,3]);
+// this will be counted as if the iterable passed contains only the resolved promise with value "444", so it gets fulfilled
+var p2 = Promise.all([1,2,3, Promise.resolve(444)]);
+// this will be counted as if the iterable passed contains only the rejected promise with value "555", so it gets rejected
+var p3 = Promise.all([1,2,3, Promise.reject(555)]);
