@@ -283,8 +283,21 @@
 //   console.log(values);
 // });
 
-var p = Promise.all([1,2,3]);
-// this will be counted as if the iterable passed contains only the resolved promise with value "444", so it gets fulfilled
-var p2 = Promise.all([1,2,3, Promise.resolve(444)]);
-// this will be counted as if the iterable passed contains only the rejected promise with value "555", so it gets rejected
-var p3 = Promise.all([1,2,3, Promise.reject(555)]);
+// var p = Promise.all([1,2,3]);
+// // this will be counted as if the iterable passed contains only the resolved promise with value "444", so it gets fulfilled
+// var p2 = Promise.all([1,2,3, Promise.resolve(444)]);
+// // this will be counted as if the iterable passed contains only the rejected promise with value "555", so it gets rejected
+// var p3 = Promise.all([1,2,3, Promise.reject(555)]);
+
+// // using setTimeout we can execute code after the stack is empty
+// setTimeout(function() {
+//     console.log(p);
+//     console.log(p2);
+//     console.log(p3);
+// });
+
+const promise1 = Promise.resolve(3);
+const promise2 = new Promise((resolve, reject) => setTimeout(resolve, 100, 'foo'));
+const promises = [promise1, promise2];
+Promise.allSettled(promises).
+  then((results) => results.forEach((result) => console.log(result.status)));
