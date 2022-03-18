@@ -296,8 +296,48 @@
 //     console.log(p3);
 // });
 
-const promise1 = Promise.resolve(3);
-const promise2 = new Promise((resolve, reject) => setTimeout(resolve, 100, 'foo'));
-const promises = [promise1, promise2];
-Promise.allSettled(promises).
-  then((results) => results.forEach((result) => console.log(result.status)));
+// const promise1 = Promise.resolve(3);
+// const promise2 = new Promise((resolve, reject) => setTimeout(resolve, 100, 'foo'));
+// const promises = [promise1, promise2];
+// Promise.allSettled(promises).
+//   then((results) => results.forEach((result) => console.log(result.status)));
+
+function job() {
+    return new Promise(function(resolve, reject) {
+        setTimeout(resolve, 2000, 'Hello world');
+    })
+}
+job().then((value) => {
+    console.log(value);
+})
+async function job() {
+    const p1 = await new Promise((resolve) => setTimeout(() => resolve('New world'), 1000))
+}
+job().then((p1) => {
+    console.log(p1);
+})
+
+const start = Date.now();
+function timeLog(text) {
+  console.log(`${Date.now() - start}ms - ${text}`);
+}
+
+function job() {
+  return new Promise(function (resolve, reject) {
+    timeLog("Job start");
+    setTimeout(function () {
+      timeLog("Job done");
+      resolve("Hello world");
+    }, 500);
+  });
+}
+
+async function main() {
+  let messages = await Promise.all([job(), job(), job()])
+
+  messages.forEach(function(message) {
+      console.log(message);
+  })
+}
+
+main();
