@@ -302,42 +302,70 @@
 // Promise.allSettled(promises).
 //   then((results) => results.forEach((result) => console.log(result.status)));
 
-function job() {
-    return new Promise(function(resolve, reject) {
-        setTimeout(resolve, 2000, 'Hello world');
-    })
-}
-job().then((value) => {
-    console.log(value);
-})
-async function job() {
-    const p1 = await new Promise((resolve) => setTimeout(() => resolve('New world'), 1000))
-}
-job().then((p1) => {
-    console.log(p1);
-})
+// function job() {
+//     return new Promise(function(resolve, reject) {
+//         setTimeout(resolve, 2000, 'Hello world');
+//     })
+// }
+// job().then((value) => {
+//     console.log(value);
+// })
+// async function job() {
+//     const p1 = await new Promise((resolve) => setTimeout(() => resolve('New world'), 1000))
+// }
+// job().then((p1) => {
+//     console.log(p1);
+// })
 
-const start = Date.now();
-function timeLog(text) {
-  console.log(`${Date.now() - start}ms - ${text}`);
+// const start = Date.now();
+// function timeLog(text) {
+//   console.log(`${Date.now() - start}ms - ${text}`);
+// }
+
+// function job() {
+//   return new Promise(function (resolve, reject) {
+//     timeLog("Job start");
+//     setTimeout(function () {
+//       timeLog("Job done");
+//       resolve("Hello world");
+//     }, 500);
+//   });
+// }
+
+// async function main() {
+//   let messages = await Promise.all([job(), job(), job()])
+
+//   messages.forEach(function(message) {
+//       console.log(message);
+//   })
+// }
+
+// main();
+
+try {
+  try {
+    throw new Error("oops");
+  }
+//   catch (e){
+//     console.error(e.message);
+//   }
+    finally {
+    console.log("finally");
+  }
+} catch (ex) {
+  console.error("outer", ex.message);
 }
 
-function job() {
-  return new Promise(function (resolve, reject) {
-    timeLog("Job start");
-    setTimeout(function () {
-      timeLog("Job done");
-      resolve("Hello world");
-    }, 500);
-  });
+try {
+  try {
+    // throw new Error("oops");
+    asasd
+  } catch (ex) {
+    console.error("inner", ex);
+  } finally {
+    console.log("finally");
+    throw new Error("nece")
+  }
+} catch (ex) {
+  console.error("outer", ex.message);
 }
-
-async function main() {
-  let messages = await Promise.all([job(), job(), job()])
-
-  messages.forEach(function(message) {
-      console.log(message);
-  })
-}
-
-main();
