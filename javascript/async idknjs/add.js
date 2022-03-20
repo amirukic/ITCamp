@@ -342,30 +342,70 @@
 
 // main();
 
-try {
-  try {
-    throw new Error("oops");
-  }
-//   catch (e){
-//     console.error(e.message);
+// try {
+//   try {
+//     throw new Error("oops");
 //   }
-    finally {
-    console.log("finally");
-  }
-} catch (ex) {
-  console.error("outer", ex.message);
-}
+// //   catch (e){
+// //     console.error(e.message);
+// //   }
+//     finally {
+//     console.log("finally");
+//   }
+// } catch (ex) {
+//   console.error("outer", ex.message);
+// }
+
+// try {
+//   try {
+//     // throw new Error("oops");
+//     asasd
+//   } catch (ex) {
+//     console.error("inner", ex);
+//   } finally {
+//     console.log("finally");
+//     throw new Error("nece")
+//   }
+// } catch (ex) {
+//   console.error("outer", ex.message);
+// }
 
 try {
   try {
-    // throw new Error("oops");
-    asasd
+    throw new Error("oops");
   } catch (ex) {
-    console.error("inner", ex);
+    console.error("inner", ex.message);
+    throw ex;
   } finally {
     console.log("finally");
-    throw new Error("nece")
   }
-} catch (ex) {
+} finally {
   console.error("outer", ex.message);
+}
+console.log("jos nesto");
+
+(function () {
+  try {
+    try {
+        throw new Error("oops");
+    } catch (ex) {
+        return;
+        console.error("inner", ex.message);
+        throw ex;
+    } finally {
+        console.log("finally");
+    }
+  } catch (ex) {
+    console.error("outer", ex.message);
+  }
+})();
+
+console.log("jos nesto")
+console.log("jos nesto")
+try {
+  setTimeout(function () {
+    noSuchVariable; // script will die here
+  }, 1000);
+} catch (err) {
+  alert("won't work");
 }
