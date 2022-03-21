@@ -370,42 +370,57 @@
 //   console.error("outer", ex.message);
 // }
 
-try {
-  try {
-    throw new Error("oops");
-  } catch (ex) {
-    console.error("inner", ex.message);
-    throw ex;
-  } finally {
-    console.log("finally");
-  }
-} finally {
-  console.error("outer", ex.message);
-}
-console.log("jos nesto");
+// try {
+//   try {
+//     throw new Error("oops");
+//   } catch (ex) {
+//     console.error("inner", ex.message);
+//     throw ex;
+//   } finally {
+//     console.log("finally");
+//   }
+// } finally {
+// //   console.error("outer", ex.message);
+// }
+// console.log("jos nesto");
 
-(function () {
-  try {
-    try {
-        throw new Error("oops");
-    } catch (ex) {
-        return;
-        console.error("inner", ex.message);
-        throw ex;
-    } finally {
-        console.log("finally");
-    }
-  } catch (ex) {
-    console.error("outer", ex.message);
-  }
-})();
+// (function () {
+//   try {
+//     try {
+//         throw new Error("oops");
+//     } catch (ex) {
+//         return;
+//         console.error("inner", ex.message);
+//         throw ex;
+//     } finally {
+//         console.log("finally");
+//     }
+//   } catch (ex) {
+//     console.error("outer", ex.message);
+//   }
+// })();
 
-console.log("jos nesto")
-console.log("jos nesto")
-try {
-  setTimeout(function () {
-    noSuchVariable; // script will die here
-  }, 1000);
-} catch (err) {
-  alert("won't work");
-}
+// console.log("jos nesto")
+// console.log("jos nesto")
+// try {
+//   setTimeout(function () {
+//     noSuchVariable; // script will die here
+//   }, 1000);
+// } catch (err) {
+//   alert("won't work");
+// }
+
+fetch("https://reqres.in/api/users/40", {
+  method: "POST",
+  headers: {
+    "Content-type": "aplication/json",
+  },
+  body: JSON.stringify({
+    name: "user 1",
+  }),
+})
+  .then((res) => {
+    return res.json();
+  })
+  .then((data) => console.log(data))
+  .catch((error) => console.log("ERROR"));
