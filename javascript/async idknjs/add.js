@@ -410,17 +410,36 @@
 //   alert("won't work");
 // }
 
-fetch("https://reqres.in/api/users/40", {
-  method: "POST",
-  headers: {
-    "Content-type": "aplication/json",
-  },
-  body: JSON.stringify({
-    name: "user 1",
-  }),
-})
-  .then((res) => {
-    return res.json();
+// fetch("https://reqres.in/api/users/40", {
+//   method: "POST",
+//   headers: {
+//     "Content-type": "aplication/json",
+//   },
+//   body: JSON.stringify({
+//     name: "user 1",
+//   }),
+// })
+//   .then((res) => {
+//     return res.json();
+//   })
+//   .then((data) => console.log(data))
+//   .catch((error) => console.log("ERROR"));
+
+fetch("https://catfact.ninja/facts")
+  .then((response) => {
+    return response.json();
   })
-  .then((data) => console.log(data))
-  .catch((error) => console.log("ERROR"));
+  .then((response) => {
+    console.log(response);
+  });
+
+const id = fetch("https://catfact.ninja/facts");
+async function mymove() {
+  try {
+    const response = await (await id).json();
+    console.log(response);
+  } catch {
+    console.log("error");
+  }
+}
+mymove();
