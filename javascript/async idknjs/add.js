@@ -425,21 +425,35 @@
 //   .then((data) => console.log(data))
 //   .catch((error) => console.log("ERROR"));
 
-fetch("https://catfact.ninja/facts")
-  .then((response) => {
-    return response.json();
-  })
-  .then((response) => {
-    console.log(response);
-  });
+// fetch("https://catfact.ninja/facts")
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((response) => {
+//     console.log(response);
+//   });
 
-const id = fetch("https://catfact.ninja/facts");
-async function mymove() {
-  try {
-    const response = await (await id).json();
-    console.log(response);
-  } catch {
-    console.log("error");
-  }
+// const id = fetch("https://catfact.ninja/facts");
+// async function mymove() {
+//   try {
+//     const response = await (await id).json();
+//     console.log(response);
+//   } catch {
+//     console.log("error");
+//   }
+// }
+// mymove();
+
+async function mymove () {
+    try{
+        const response = await fetch("https://jsonplaceholder.typicode.com/users")
+    const resJson = await response.json()
+    const name = resJson.map((el) => {
+        return {email: el.email}
+    })
+    console.log(name);
+    }catch{
+        console.log("Program nece da radi");
+    }
 }
-mymove();
+mymove()
