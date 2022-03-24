@@ -444,16 +444,37 @@
 // }
 // mymove();
 
-async function mymove () {
-    try{
-        const response = await fetch("https://jsonplaceholder.typicode.com/users")
-    const resJson = await response.json()
-    const name = resJson.map((el) => {
-        return {email: el.email}
-    })
-    console.log(name);
-    }catch{
-        console.log("Program nece da radi");
-    }
-}
-mymove()
+// async function mymove () {
+//     try{
+//         const response = await fetch("https://jsonplaceholder.typicode.com/users")
+//     const resJson = await response.json()
+//     const name = resJson.map((el) => {
+//         return {email: el.email}
+//     })
+//     console.log(name);
+//     }catch{
+//         console.log("Program nece da radi");
+//     }
+// }
+// mymove()
+
+const BASE_URL = "https://catfact.ninja";
+let page = 0;
+document.querySelector("#page").addEventListener("click", function () {
+  if (page < 4) {
+    page += 1;
+    getFacts();
+  }
+});
+const getFacts = async () => {
+  try {
+    const response = await fetch(`${BASE_URL}/facts?page=${page}`);
+    const resJson = await response.json();
+    // console.log(resJson);
+
+    console.log(resJson.data);
+  } catch (e) {
+    console.log(e);
+  }
+};
+getFacts()
