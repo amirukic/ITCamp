@@ -458,23 +458,53 @@
 // }
 // mymove()
 
-const BASE_URL = "https://catfact.ninja";
-let page = 0;
-document.querySelector("#page").addEventListener("click", function () {
-  if (page < 4) {
-    page += 1;
-    getFacts();
-  }
-});
-const getFacts = async () => {
-  try {
-    const response = await fetch(`${BASE_URL}/facts?page=${page}`);
-    const resJson = await response.json();
-    // console.log(resJson);
+// const BASE_URL = "https://catfact.ninja";
+// let page = 0;
+// document.querySelector("#page").addEventListener("click", function () {
+//   if (page < 4) {
+//     page += 1;
+//     getFacts();
+//   }
+// });
+// const getFacts = async () => {
+//   try {
+//     const response = await fetch(`${BASE_URL}/facts?page=${page}`);
+//     const resJson = await response.json();
+//     // console.log(resJson);
 
-    console.log(resJson.data);
-  } catch (e) {
-    console.log(e);
-  }
+//     console.log(resJson.data);
+//   } catch (e) {
+//     console.log(e);
+//   }
+// };
+// getFacts()
+
+// Simple PUT request with a JSON body using fetch
+
+(async () => {
+    // PUT request using fetch with async/await
+    const element = document.querySelector('#put-request-async-await .date-updated');
+    const requestOptions = {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ title: 'Fetch PUT Request Example' })
+    };
+    const response = await fetch('https://reqres.in/api/articles/1', requestOptions);
+    const data = await response.json();
+    console.log(data);
+})();
+
+// PUT request using fetch with set headers
+const element = document.querySelector('#put-request-set-headers .date-updated');
+const requestOptions = {
+    method: 'PUT',
+    headers: { 
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer my-token',
+        'My-Custom-Header': 'foobar'
+    },
+    body: JSON.stringify({ osobina: 'Jak' })
 };
-getFacts()
+fetch('https://reqres.in/api/articles/1', requestOptions)
+    .then(response => response.json())
+    .then(data => console.log(data));
