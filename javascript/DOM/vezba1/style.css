@@ -1,0 +1,34 @@
+body{
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.but{
+    background-color: rgb(202, 202, 202);
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dugme1{
+    margin-left: 10px;
+}
+.dugme2{
+    margin-left: 10px;
+}
+.dugme3{
+    margin-left: 10px;
+}
+.dugme4{
+    margin-left: 10px;
+}
+.pre{
+    display: none;
+}
+.next{
+    margin-left: 10px;
+}
