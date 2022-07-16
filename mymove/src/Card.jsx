@@ -1,5 +1,11 @@
 const Card = () => {
-    return (<div style={{border: "1px solid green", padding: "10px"}}>cao brate</div>)
+    return (<div className="card">
+    <p>Nesto</p>
+    <div>
+      <button className="check">check</button>
+      <button className="delete">delete</button>
+    </div>
+  </div>)
 }
 
 export default Card;

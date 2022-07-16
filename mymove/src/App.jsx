@@ -1,12 +1,13 @@
-import Card from "./Card"
+// import Card from "./Card"
+import "./App.css"
+import Counter from "./Counter"
 
 const App = () => {
-  return (<div className="container" >
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-  </div>)
+  return (<div className="main">
+    <Counter />
+  </div>
+  )
 }
+
+
 export default App;
