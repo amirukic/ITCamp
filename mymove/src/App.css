@@ -1,39 +1,65 @@
 body{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
-.main{
-    width: 100%;
-    background-color: blueviolet;
-    min-height: 100vh;
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
+
+.container {
+  width: 100%;
+  background-color: rgb(209, 42, 195);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 h1 {
-    font-size: 60px;
-    color: white;
-    margin: 0 40px;
+  font-size: 60px;
+  color: white;
 }
 
-.unos{
-    margin: 20px 0;
+.unos {
+  margin: 20px 0;
 }
-.card{
-    background-color: orange;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    margin: 20px 0;
-    width: 500px;
+input {
+  padding: 10px 20px;
+  font-size: 25px;
 }
 
-.card button{
-    width: 100px;
-    height: 50px;
-    background-color: green;
-    border-radius: 10px;
-    margin: 2px;
+.card {
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin: 20px 0;
+  width: 500px;
+  border-radius: 30px;
+  padding: 10px;
+}
+.checked {
+  background-color: greenyellow;
+}
+.card div {
+  height: 100%;
+  width: 30%;
+}
+
+.card button {
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  margin-left: 10px;
+}
+
+.check {
+  background-color: green;
+}
+
+.delete {
+  background-color: red;
+}
+
+p {
+  color: white;
+  font-size: 23px;
 }
