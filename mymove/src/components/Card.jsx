@@ -14,7 +14,7 @@ const Card = (props) => {
         >
           CEKIRAJ
         </button>
-        <button className="delete">delete</button>
+        <button className="delete" onClick={props.onDelete}>delete</button>
       </div>
     </div>
   );

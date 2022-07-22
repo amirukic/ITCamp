@@ -23,8 +23,15 @@ const App = () => {
           Submit
         </button>
       </div>
-      {data.map((el) => {
-        return <Card title={el} />;
+      {data.map((el, i) => {
+        return (
+          <Card
+            title={el}
+            onDelete={() => {
+              setData(data.filter((el, index) => i !== index));
+            }}
+          />
+        );
       })}
     </div>
   );
