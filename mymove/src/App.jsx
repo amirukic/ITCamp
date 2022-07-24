@@ -1,40 +1,30 @@
 import { useState } from "react";
 import "./App.css";
-import Card from "./components/Card";
+// import Card from "./components/Card";
 const App = () => {
-  const [data, setData] = useState([]);
-
-  let a = "";
+  let formValue = {
+    name: "",
+    email: "",
+    lastName: "",
+  };
+  const [value,setValue] = useState({
+    name: "",
+    email: "",
+    lastName: "",
+  })
   return (
-    <div className="container">
-      <h1>TODO LIST</h1>
-      <div className="unos">
-        <input
-          type="text"
-          onChange={(e) => {
-            a = e.target.value;
-          }}
-        />
-        <button
-          onClick={() => {
-            setData([...data, a]);
-          }}
-        >
-          Submit
-        </button>
-      </div>
-      {data.map((el, i) => {
-        return (
-          <Card
-            title={el}
-            onDelete={() => {
-              setData(data.filter((el, index) => i !== index));
-            }}
-          />
-        );
-      })}
+    <div>
+      <input type="text" placeholder="firstName" onChange={(e) => {
+        formValue.lastName = e.target.value
+      }} />
+      <input type="text" placeholder="lasttName" onChange={(e) => {
+        formValue.lastName = e.target.value
+      }} />
+      <input type="text" placeholder="email" onChange={(e) => {
+        formValue.lastName = e.target.value
+      }} />
     </div>
-  );
+  )
 };
 
 export default App;
