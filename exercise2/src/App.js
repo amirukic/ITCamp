@@ -1,23 +1,39 @@
-import {Link, Route, Routes } from "react-router-dom";
-import Cart from "./Cart";
-const App = () => {
-  return (
-    <div>
-      <Routes>
-        <Route path={"/Cart"} element={<Cart />} />
-        <Route path={"/"} element={<h1>WELCOME</h1>} />
-      </Routes>
-      <div>
-        <Link to={"/"}>
-          <h1>WELCOME</h1>
-        </Link>
+import { useReducer, useState } from "react";
+import Todo from "./Todo";
+import "./App.css"
 
-        <Link to={"/Cart"}>
-          <h1>Cart</h1>
-        </Link>
-      </div>
+// const reducer = (state , action) => {
+//   switch (actionm,type) {
+//     case "increment":
+//     case "decrement":
+//       return action.data
+//     default: 
+//     return state
+//   }
+// }
+
+function App() {
+
+  let a = fetch("https://soccer.sportmonks.com/api/v2.0/leagues?271").then((res) => {return res.json()})
+  .then(res => console.log(res))
+  
+  // const [count, dispatch] = iseReducer(reducer, 0);
+
+  // function increment () {
+  //   dispatch({type: "increment" , data: count + 1})
+  // }
+
+  // function decrement () {
+  //   dispatch({type: "decrement" , data: count - 1})
+  // }
+  return ( 
+    <div>
+      {/* <button onClick={decrement}>-</button>
+      <p>{count}</p>
+      <button onClick={increment}>+</button> */}
+      {/* <Todo /> */}
     </div>
-  );
-};
+   );
+}
 
 export default App;
