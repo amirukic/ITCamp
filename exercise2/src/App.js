@@ -1,39 +1,27 @@
 import { useReducer, useState } from "react";
-import Todo from "./Todo";
-import "./App.css"
+import Axios from "./Axios";
+import {Link, Route, Routes } from "react-router-dom";
 
-// const reducer = (state , action) => {
-//   switch (actionm,type) {
-//     case "increment":
-//     case "decrement":
-//       return action.data
-//     default: 
-//     return state
-//   }
-// }
+import "./App.css";
 
 function App() {
-
-  let a = fetch("https://soccer.sportmonks.com/api/v2.0/leagues?271").then((res) => {return res.json()})
-  .then(res => console.log(res))
   
-  // const [count, dispatch] = iseReducer(reducer, 0);
 
-  // function increment () {
-  //   dispatch({type: "increment" , data: count + 1})
-  // }
+  return <div>
+    <Routes>
+        <Route path={"/Axios"} element={<Axios />} />
+        <Route path={"/"} element={<h1>WELCOME</h1>} />
+      </Routes>
+      <div>
+        <Link to={"/"}>
+          <h1>WELCOME</h1>
+        </Link>
 
-  // function decrement () {
-  //   dispatch({type: "decrement" , data: count - 1})
-  // }
-  return ( 
-    <div>
-      {/* <button onClick={decrement}>-</button>
-      <p>{count}</p>
-      <button onClick={increment}>+</button> */}
-      {/* <Todo /> */}
-    </div>
-   );
+        <Link to={"/Axios"}>
+          <h1>News</h1>
+        </Link>
+      </div>
+  </div>;
 }
 
 export default App;
