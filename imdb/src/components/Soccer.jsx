@@ -26,7 +26,6 @@ function Soccer() {
         <div key={index} className="card">
           <h2>{art.player_name}</h2>
           <img src={art.player_image} alt="No image"/>
-          <img src="" alt="" srcset="" />
           <p>Pozicija {art.player_type}</p>
           <p>Broj igraca {art.player_number}</p>
           <p>Godine igraca {art.player_age}</p>
