@@ -4,11 +4,11 @@ function Card() {
   const [poke, setPoke] = useState();
   async function getUser() {
     const res = await fetch(
-      `https://apiv2.allsportsapi.com/football/?met=Countries&APIkey=4710d673b6cdd6c5336e670eaff96a429add6ad6f6ddaa619e33ef50882b5cee`
+      `https://kitsu.io/api/edge/anime/7991`
     );
     const data = await res.json();
     console.log(data);
-    setPoke(data.result);
+    setPoke(data.data);
   }
 
   useEffect(() => {
@@ -16,12 +16,12 @@ function Card() {
   }, []);
   return (
     <>
-      {poke?.map((card, index) => (
+      {/* {poke?.map((card, index) => (
         <div key={index} className="rep">
-            <h1>{card.country_name}</h1>
-            <img src={card.country_logo} alt="" />
+            <h1>{card.attributes.slug}</h1>
+            <h2>{card.attributes.synopsis}</h2>
         </div>
-      ))}
+      ))} */}
     </>
   );
 }
