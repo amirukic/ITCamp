@@ -4,11 +4,11 @@ function Card() {
   const [poke, setPoke] = useState();
   async function getUser() {
     const res = await fetch(
-      `https://kitsu.io/api/edge/anime/7991`
+      `https://kitsu.io/api/edge/anime?page[limit]=8&page[offset]=0&filter[text]=one%20piece`
     );
     const data = await res.json();
-    console.log(data);
     setPoke(data.data);
+    console.log(data.data);
   }
 
   useEffect(() => {
@@ -16,12 +16,9 @@ function Card() {
   }, []);
   return (
     <>
-      {/* {poke?.map((card, index) => (
-        <div key={index} className="rep">
-            <h1>{card.attributes.slug}</h1>
-            <h2>{card.attributes.synopsis}</h2>
-        </div>
-      ))} */}
+        {poke?.map((el,index) => (
+          <div key={index} className="main"><img src={el.attributes.posterImage.small} alt="" /></div>
+        ))}
     </>
   );
 }
