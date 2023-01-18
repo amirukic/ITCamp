@@ -37,7 +37,7 @@ function App() {
         return (
           <div>
             <div style={tr}>
-              <h1>{e.variety}</h1>
+              <h1>{e.variety}%</h1>
             </div>
           </div>
         );
